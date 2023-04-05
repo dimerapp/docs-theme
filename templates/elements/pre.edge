@@ -1,0 +1,15 @@
+<div class="dimer_highlight" x-data="copyCodeToClipboard">
+  @if(node.properties.dataTitle && !inTabsLayout)
+    <div class="codeblock_title"> {{ node.properties.dataTitle }} </div>
+  @end
+  <button class="copy_code" @click.prevent="copy" :class="{ success: state === 'copied' }">
+    <span class="sr_only"> Copy code to clipboard </span>
+    <span x-show="state === 'idle'">
+      @include('docs::partials/icons/copy')
+    </span>
+    <span x-show="state === 'copied'">
+      @include('docs::partials/icons/tick')
+    </span>
+  </button>
+  @!component('dimer_element', { node, renderer })~
+</div>

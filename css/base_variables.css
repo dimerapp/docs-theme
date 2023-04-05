@@ -1,0 +1,106 @@
+:root {
+  --font-sans: 'Untitled Sans';
+  --font-mono: 'Fira code';
+
+  --rounded-sm: 6px;
+  --rounded-md: 8px;
+  --header-height: 61px;
+  --sidebar-width: 100vw;
+  --aside-width: 20px;
+  --surface-spacing: 24px;
+  --logo-container-width: 35px;
+
+  --base-line-height: 1;
+
+  --content-width: 780px;
+  --markdown-width: 670px;
+
+  --prose-font-size: 15px;
+  --prose-line-height: 25px;
+
+  --pre-font-size: 15px;
+  --code-font-size: 15px;
+  --code-font-weight: 400;
+  --pre-line-height: 21px;
+
+  --prose-p-margin-bottom: 15px;
+
+  --prose-h1-margin-bottom: 24px;
+  --prose-h1-font-size: 35px;
+  --prose-h1-line-height: 40px;
+  --prose-h1-letter-spacing: -1.19px;
+  --prose-h1-font-weight: 500;
+
+  --prose-h2-margin-bottom: 10px;
+  --prose-h2-font-size: 21px;
+  --prose-h2-line-height: 25px;
+  --prose-h2-letter-spacing: -0.837px;
+  --prose-h2-font-weight: 500;
+
+  --prose-h3-margin-bottom: 5px;
+  --prose-h3-font-size: 17px;
+  --prose-h3-line-height: 20px;
+  --prose-h3-letter-spacing: -0.285px;
+  --prose-h3-font-weight: 500;
+
+  --prose-h4-margin-bottom: 5px;
+  --prose-h4-font-size: 16px;
+  --prose-h4-line-height: 18px;
+  --prose-h4-letter-spacing: -0.225px;
+  --prose-h4-font-weight: 500;
+
+  --prose-section-margin-top: 44px;
+  --prose-section-padding-top: 32px;
+  --prose-section-border-color: var(--mauve4);
+  --prose-sub-section-margin-top: 45px;
+
+  --prose-elements-margin: 24px;
+  --prose-elements-spacing: 25px;
+
+  --prose-table-font-size: 14px;
+  --prose-table-heading-font-weight: 500;
+  --prose-table-line-height: 25px;
+
+  --prose-alert-font-size: 14px;
+  --prose-alert-line-height: 22px;
+
+  --prose-dl-font-size: 14px;
+  --prose-dl-line-height: 22px;
+  --prose-dl-spacing: 22px;
+
+  --sidebar-title-padding-bottom: 10px;
+  --sidebar-title-padding-top: 10px;
+  --sidebar-title-padding-left: 15px;
+  --sidebar-title-padding-right: 15px;
+  --sidebar-title-font-size: 15px;
+  --sidebar-title-line-height: 1;
+  --sidebar-title-font-weight: 500;
+
+  --sidebar-anchor-padding-bottom: 10px;
+  --sidebar-anchor-padding-top: 10px;
+  --sidebar-anchor-padding-left: 15px;
+  --sidebar-anchor-padding-right: 15px;
+  --sidebar-anchor-font-size: 13px;
+  --sidebar-anchor-line-height: 1;
+
+  --pre-title-font-size: 15px;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --logo-container-width: 250px;
+    --aside-width: 250px;
+    --prose-font-size: 17px;
+    --prose-line-height: 27px;
+
+    --prose-h2-font-size: 27px;
+    --prose-h2-line-height: 30px;
+
+    --prose-h3-font-size: 19px;
+    --prose-h3-line-height: 23px;
+
+    --prose-h4-font-size: 17px;
+    --prose-h4-line-height: 20px;
+    --sidebar-width: 250px;
+  }
+}

@@ -1,0 +1,32 @@
+<div class="aside_container">
+  <nav class="header_nav_items">
+    <button x-data @click.prevent="$store.darkMode.toggle()">
+      <span class="sr_only">Toggle color theme</span>
+
+      <span x-show="$store.darkMode.enabled === false">
+        @include('docs::partials/icons/sun')
+      </span>
+      <span x-show="$store.darkMode.enabled">
+        @include('docs::partials/icons/moon')
+      </span>
+    </button>
+
+    @if(links.github)
+      <a
+        href="{{ links.github.href }}"
+        class="hidden md_block"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="{{ links.github.title }}"
+      >
+        <span class="sr_only">{{ links.github.title || 'Visit us on Github' }}</span>
+        @include('docs::partials/icons/octocat')
+      </a>
+    @end
+
+    <button class="md_hidden" @click="$store.offcanvasMenu.toggle()">
+      <span class="sr_only"> Toggle Menu </span>
+      @include('docs::partials/icons/hamburger')
+    </button>
+  </nav>
+</div>

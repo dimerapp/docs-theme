@@ -1,0 +1,20 @@
+@set('tabs', JSON.parse(node.properties.dataTabs))
+
+<div x-data="codegroupTabsWrapper">
+  @component('ui::components/tabs/group', { class: 'codegroup' })
+    @component('ui::components/tabs/list', { class: 'codegroup_tabs' })
+      <div class="highlighter" x-ref="highlighter"></div>
+      @each(tab in tabs)
+        @!component('ui::components/tabs/trigger', { text: tab })
+      @end
+    @end
+
+    <div>
+      @each(child in node.children)
+        @component('ui::components/tabs/panel')
+          @!component('dimer_contents', { nodes: [child], renderer, inTabsLayout: true })~
+        @end
+      @end
+    </div>
+  @end
+</div>

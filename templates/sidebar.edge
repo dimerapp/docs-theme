@@ -1,0 +1,26 @@
+<div class="docs_sidebar_wrapper" x-data x-show="$store.offcanvasMenu.active">
+  <div class="docs_sidebar">
+    <div class="docs_sidebar_container">
+      <nav>
+        <ul>
+          @each(section in sections)
+            <li class="sidebar_section">
+              <h3 class="section_section_title">
+                {{ section.title }}
+              </h3>
+              <ul class="sidebar_section_items">
+                @each(item in section.items)
+                  <li class="sidebar_section_item">
+                    <a href="{{ item.href }}">
+                      {{ item.title }}
+                    </a>
+                  </li>
+                @end
+              </ul>
+            </li>
+          @end
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,11 @@
+<div class="logo_container">
+  <a href="{{ links.home.href }}" class="logo" title="{{ links.home.title }}">
+    <span class="sr_only">{{ links.home.title }}</span>
+    <span class="hidden md_block">
+      {{{ await $slots.logo() }}}
+    </span>
+    <span class="md_hidden">
+      {{{ await $slots.logoMobile() }}}
+    </span>
+  </a>
+</div>

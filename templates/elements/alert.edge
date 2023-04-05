@@ -1,0 +1,12 @@
+<div class="{{ node.properties.className.join(' ') }}">
+  <div class="alert_type">
+    @if(node.properties.className.includes('alert-note'))
+      @include('docs::partials/icons/info')
+    @elseif(node.properties.className.includes('alert-warning'))
+      @include('docs::partials/icons/warning')
+    @end
+  </div>
+  <div class="alert_contents">
+    @!component('dimer_contents', { nodes: node.children, renderer })~
+  </div>
+</div>
