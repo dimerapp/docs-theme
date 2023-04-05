@@ -1,0 +1,109 @@
+{
+  "name": "@dimerapp/docs-theme",
+  "version": "0.0.0",
+  "description": "Documentation theme built on top of Dimer and used by AdonisJS",
+  "type": "module",
+  "main": "build/index.js",
+  "files": [
+    "build/src",
+    "build/index.d.ts",
+    "build/index.js"
+  ],
+  "exports": {
+    ".": "./build/index.js",
+    "./types": "./build/src/types.js"
+  },
+  "scripts": {
+    "pretest": "npm run lint",
+    "test": "c8 npm run vscode:test",
+    "clean": "del-cli build",
+    "compile": "npm run lint && npm run clean && tsc",
+    "build": "npm run compile",
+    "release": "np",
+    "version": "npm run build",
+    "prepublishOnly": "npm run build",
+    "lint": "eslint . --ext=.ts",
+    "format": "prettier --write .",
+    "sync-labels": "github-label-sync --labels .github/labels.json dimerapp/docs-theme",
+    "vscode:test": "node --loader=ts-node/esm bin/test.ts"
+  },
+  "publishConfig": {
+    "access": "public",
+    "tag": "latest"
+  },
+  "keywords": [],
+  "author": "virk,dimerapp",
+  "license": "MIT",
+  "devDependencies": {
+    "@commitlint/cli": "^17.0.2",
+    "@commitlint/config-conventional": "^17.0.2",
+    "@japa/assert": "^1.3.4",
+    "@japa/run-failed-tests": "^1.0.7",
+    "@japa/runner": "^2.0.9",
+    "@japa/spec-reporter": "^1.1.12",
+    "@swc/core": "^1.2.203",
+    "@types/node": "^18.0.0",
+    "c8": "^7.13.0",
+    "del-cli": "^4.0.1",
+    "eslint": "^8.17.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-adonis": "^3.0.2",
+    "eslint-plugin-prettier": "^4.0.0",
+    "github-label-sync": "^2.2.0",
+    "husky": "^8.0.1",
+    "np": "^7.6.1",
+    "prettier": "^2.7.1",
+    "ts-node": "^10.8.1",
+    "typescript": "^4.7.3"
+  },
+  "eslintConfig": {
+    "extends": [
+      "plugin:adonis/typescriptPackage",
+      "prettier"
+    ],
+    "plugins": [
+      "prettier"
+    ],
+    "rules": {
+      "prettier/prettier": [
+        "error",
+        {
+          "endOfLine": "auto"
+        }
+      ]
+    }
+  },
+  "eslintIgnore": [
+    "build"
+  ],
+  "prettier": {
+    "trailingComma": "es5",
+    "semi": false,
+    "singleQuote": true,
+    "useTabs": false,
+    "quoteProps": "consistent",
+    "bracketSpacing": true,
+    "arrowParens": "always",
+    "printWidth": 100
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "np": {
+    "message": "chore(release): %s",
+    "tag": "latest",
+    "branch": "main",
+    "anyBranch": false
+  },
+  "c8": {
+    "reporter": [
+      "text",
+      "html"
+    ],
+    "exclude": [
+      "tests/**"
+    ]
+  }
+}
