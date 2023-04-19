@@ -1,5 +1,4 @@
-@dimerapp/docs-theme
-> Providing templates, CSS and frontend JavaScript for documentation website
+# @dimerapp/docs-theme
 
 <br />
 
