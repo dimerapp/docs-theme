@@ -44,7 +44,7 @@
     "@alpinejs/persist": "^3.12.0",
     "@commitlint/cli": "^17.6.1",
     "@commitlint/config-conventional": "^17.6.1",
-    "@dimerapp/edge": "^3.0.0-6",
+    "@dimerapp/edge": "^3.0.0",
     "@japa/assert": "^1.3.4",
     "@japa/run-failed-tests": "^1.0.7",
     "@japa/runner": "^2.0.9",
@@ -69,7 +69,7 @@
     "typescript": "^5.0.4"
   },
   "peerDependencies": {
-    "@dimerapp/edge": "^3.0.0-6",
+    "@dimerapp/edge": "^3.0.0",
     "edge.js": "^5.5.1"
   },
   "eslintConfig": {
