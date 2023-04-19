@@ -76,7 +76,7 @@ Alpine.plugin(initAlpinePlugins)
 Alpine.plugin(initSearch(docsearch))
 ```
 
-[gh-workflow-image]: https://img.shields.io/github/workflow/actions/status/dimerapp/docs-theme/test.yml?style=for-the-badge
+[gh-workflow-image]: https://img.shields.io/github/actions/workflow/status/dimerapp/docs-theme/test.yml?style=for-the-badge
 [gh-workflow-url]: https://github.com/dimerapp/docs-theme/actions/workflows/test.yml "Github action"
 
 [npm-image]: https://img.shields.io/npm/v/@dimerapp/docs-theme/latest.svg?style=for-the-badge&logo=npm
