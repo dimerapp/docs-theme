@@ -6,6 +6,7 @@
   "main": "build/index.js",
   "files": [
     "build/css",
+    "build/js",
     "build/templates",
     "build/index.d.ts",
     "build/index.d.ts.map",
