@@ -82,4 +82,80 @@ export default function (Alpine) {
       },
     }
   })
+
+  /**
+   * Tracks the scrolling of windows and activates the
+   * hash link next to it.
+   */
+  Alpine.data('trackScroll', function () {
+    return {
+      scrollListener: null,
+
+      setActiveTableOfContents(scrollContainerIntoView) {
+        const links = Array.from(this.$el.querySelectorAll('a'))
+
+        let lastVisible =
+          links
+            .slice()
+            .reverse()
+            .find((link) => {
+              const el = document.querySelector(link.hash)
+              return el.getBoundingClientRect().top <= 100
+            }) ?? links[0]
+
+        links.forEach((link) => {
+          if (link === lastVisible) {
+            link.classList.add('up-current')
+            if (scrollContainerIntoView) {
+              link.scrollIntoView({
+                block: 'center',
+                behavior: 'smooth',
+              })
+            }
+          } else {
+            link.classList.remove('up-current')
+          }
+        })
+      },
+
+      init() {
+        this.scrollListener = function () {
+          this.setActiveTableOfContents(false)
+        }.bind(this)
+
+        this.$nextTick(() => {
+          this.setActiveTableOfContents(true)
+          window.addEventListener('scroll', this.scrollListener, { passive: true })
+        })
+      },
+
+      destroy() {
+        console.log('removing scroll listener')
+        window.removeEventListener('scroll', this.scrollListener)
+      },
+    }
+  })
+}
+
+/**
+ * Initiate search plugin
+ */
+export const initSearch = (docsearch) => {
+  return function (Alpine) {
+    /**
+     * Search widget
+     */
+    Alpine.data('search', function (options) {
+      return {
+        init() {
+          docsearch({
+            container: this.$el,
+            appId: options.appId,
+            indexName: options.indexName,
+            apiKey: options.apiKey,
+          })
+        },
+      }
+    })
+  }
 }

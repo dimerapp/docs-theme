@@ -52,7 +52,8 @@
   --prose-section-margin-top: 44px;
   --prose-section-padding-top: 32px;
   --prose-section-border-color: var(--mauve4);
-  --prose-sub-section-margin-top: 45px;
+  --prose-sub-section-margin-top: 25px;
+  --prose-sub-section-padding-top: 20px;
 
   --prose-elements-margin: 24px;
   --prose-elements-spacing: 25px;
@@ -82,6 +83,7 @@
   --sidebar-anchor-padding-right: 15px;
   --sidebar-anchor-font-size: 13px;
   --sidebar-anchor-line-height: 1;
+  --sidebar-dropdown-icon-size: 14px;
 
   --pre-title-font-size: 15px;
 }
@@ -102,5 +104,13 @@
     --prose-h4-font-size: 17px;
     --prose-h4-line-height: 20px;
     --sidebar-width: 250px;
+  }
+}
+
+@media (min-width: 1440px) {
+  :root {
+    --sidebar-title-font-size: 16px;
+    --sidebar-anchor-font-size: 14px;
+    --sidebar-dropdown-icon-size: 15px;
   }
 }

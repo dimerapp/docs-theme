@@ -35,6 +35,7 @@
   margin-top: var(--prose-section-margin-top);
   padding-top: var(--prose-section-padding-top);
   border-top: 1px solid var(--prose-section-border-color);
+  position: relative;
 }
 
 .markdown h3 {
@@ -46,6 +47,8 @@
 
   font-weight: var(--prose-h3-font-weight);
   margin-top: var(--prose-sub-section-margin-top);
+  padding-top: var(--prose-sub-section-padding-top);
+  position: relative;
 }
 
 .markdown h4 {
@@ -54,7 +57,49 @@
   font-size: var(--prose-h4-font-size);
   line-height: var(--prose-h4-line-height);
   letter-spacing: var(--prose-h4-letter-spacing);
+
   font-weight: var(--prose-h4-font-weight);
+  position: relative;
+}
+
+.markdown h2 a[aria-hidden="true"], .markdown h3 a[aria-hidden="true"], .markdown h4 a[aria-hidden="true"] {
+  padding-left: 30px;
+  margin-left: -30px;
+  opacity: 0;
+}
+
+.markdown h2:hover a[aria-hidden="true"], .markdown h3:hover a[aria-hidden="true"], .markdown h4:hover a[aria-hidden="true"] {
+  opacity: 1;
+  pointer-events: inherit;
+}
+
+.markdown h2 a[aria-hidden="true"] .icon.icon-link, .markdown h3 a[aria-hidden="true"] .icon.icon-link, .markdown h4 a[aria-hidden="true"] .icon.icon-link {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='none' aria-hidden='true'%3E%3Cpath d='M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10' stroke='%2372716d' stroke-width='1.5' stroke-linecap='round'%3E%3C/path%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  position: absolute;
+  left: -35px;
+  border: 1px solid var(--mauve7);
+  border-radius: var(--rounded-sm);
+}
+
+.markdown h2 a[aria-hidden="true"] .icon.icon-link {
+  background-position: 7px 7px;
+  height: 28px;
+  width: 28px;
+}
+
+.markdown h3 a[aria-hidden="true"] .icon.icon-link {
+  background-position: 6px 6px;
+  height: 26px;
+  width: 26px;
+  margin-top: -1px;
+}
+
+.markdown h4 a[aria-hidden="true"] .icon.icon-link {
+  background-position: 4px 4px;
+  height: 22px;
+  width: 22px;
+  left: -30px;
 }
 
 .markdown a {
@@ -67,7 +112,7 @@
   font-weight: 500;
 }
 
-.markdown code {    
+.markdown code {
   font-size: var(--code-font-size);
   font-family: var(--font-mono);
 }
@@ -80,6 +125,13 @@
   white-space: nowrap;
   padding: 0px 3px;
   font-weight: var(--code-font-weight);
+}
+
+.markdown h2 code, .markdown h3 code, .markdown h4 code {
+  font-size: inherit;
+  background: none;
+  color: inherit;
+  font-weight: 500;
 }
 
 .markdown hr {
@@ -102,6 +154,7 @@
   position: absolute;
   right: 10px;
   top: 10px;
+  z-index: 1;
   width: 36px;
   height: 36px;
   display: flex;
@@ -135,7 +188,7 @@
 .markdown .dimer_highlight .codeblock_title {
   border-bottom: 1px solid var(--pre-title-border-color);
   color: var(--pre-title-text-color);
-  padding: 0 var(--prose-elements-spacing); 
+  padding: 0 var(--prose-elements-spacing);
   font-size: var(--pre-title-font-size);
   height: 36px;
   display: flex;
@@ -152,7 +205,7 @@
 
 .markdown .codegroup_tabs {
   border-bottom: 1px solid var(--pre-title-border-color);
-  padding: 0 var(--prose-elements-spacing); 
+  padding: 0 var(--prose-elements-spacing);
   font-size: var(--pre-title-font-size);
   height: 36px;
   display: flex;
@@ -190,7 +243,7 @@
 
 .markdown pre {
   white-space: pre;
-  padding: var(--prose-elements-spacing) 0; 
+  padding: var(--prose-elements-spacing) 0;
   font-size: var(--pre-font-size);
   font-family: var(--font-mono);
   overflow: auto;
@@ -198,7 +251,13 @@
   display: flex;
 }
 
+.markdown pre code {
+  width: 100%;
+}
+
 .markdown pre .line {
+  position: relative;
+  width: 100%;
   padding: 0 var(--prose-elements-spacing);
 }
 
@@ -211,8 +270,22 @@
   background: var(--code-highlight-color);
 }
 
+.markdown pre .line.highlight-insert {
+  background: var(--code-insert-bg-color);
+}
+
+.markdown pre .line.highlight-delete {
+  background: var(--code-delete-bg-color);
+}
+
 .markdown ul {
   list-style-type: disc;
+  padding-left: 1.15em;
+  margin: var(--prose-elements-margin) 0;
+}
+
+.markdown ol {
+  list-style-type: numeric;
   padding-left: 1.15em;
   margin: var(--prose-elements-margin) 0;
 }
@@ -318,6 +391,60 @@
 
 .markdown .alert code {
   font-size: var(--prose-alert-font-size);
+}
+
+.markdown .caption {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  position: relative;
+  margin-top: var(--prose-elements-margin);
+}
+
+.markdown .caption + .dimer_highlight {
+  margin-top: 0;
+}
+
+.markdown .caption::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  top: 22px;
+  left: 11px;
+  width: 1px;
+}
+
+.markdown .caption-error::before {
+  background: var(--caption-error-border-color);
+}
+
+.markdown .caption-success::before {
+  background: var(--caption-success-border-color);
+}
+
+.markdown .caption_icon {
+  padding: 0.5rem;
+  border-radius: 999px;
+  color: #fff;
+  margin-top: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.markdown .caption-error .caption_icon {
+  background: var(--caption-error-bg-color);
+}
+
+.markdown .caption-success .caption_icon {
+  background: var(--caption-success-bg-color);
+}
+
+.markdown .caption_icon svg {
+  width: 6px;
+  height: 6px;
+  overflow: visible;
 }
 
 .markdown dl {

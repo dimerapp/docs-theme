@@ -2,7 +2,7 @@
   <div class="toc">
     <div class="toc_container">
       <h3>On this page</h3>
-      <nav>
+      <nav x-data="trackScroll">
         {{{ await $slots.main() }}}
       </nav>
     </div>

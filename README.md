@@ -1,5 +1,5 @@
 @dimerapp/docs-theme
-> Documentation theme built on top of Dimer and used by AdonisJS
+> Providing templates, CSS and frontend JavaScript for documentation website
 
 <br />
 
@@ -9,7 +9,16 @@
 
 </div>
 
-[gh-workflow-image]: https://img.shields.io/github/workflow/status/dimerapp/docs-theme/test?style=for-the-badge
+The docs theme provides ready to use Edge templates, CSS and frontend JavaScript to create a documentation layout. This package must be used with [@dimerapp/content](https://github.com/dimerapp/content) package.
+
+## Usage
+Install the package from npm packages registry
+
+```sh
+npm i
+```
+
+[gh-workflow-image]: https://img.shields.io/github/workflow/actions/status/dimerapp/docs-theme/test.yml?style=for-the-badge
 [gh-workflow-url]: https://github.com/dimerapp/docs-theme/actions/workflows/test.yml "Github action"
 
 [npm-image]: https://img.shields.io/npm/v/@dimerapp/docs-theme/latest.svg?style=for-the-badge&logo=npm

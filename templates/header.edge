@@ -1,8 +1,10 @@
 <div class="header_wrapper">
-  <header class="header">
+  <header class="header" up-fixed="top">
     <div class="header_container">
       @include('docs::partials/logo_container')
-      @include('docs::partials/search_container')
+      @if(search && search.appId && search.indexName && search.apiKey)
+        @include('docs::partials/search_container')
+      @end
       @include('docs::partials/nav_container')
     </div>
   </header>

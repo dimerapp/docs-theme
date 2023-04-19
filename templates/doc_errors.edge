@@ -1,0 +1,10 @@
+@if(messages.length)
+  <ul class="document_errors">
+    @each(message in messages)
+      <li class="document_errors_item">
+        <span class="document_errors_item_loc">{{ message.line }}:{{ message.column }}</span>
+        <span class="document_errors_item_text">{{ message.reason }}</span>
+      </li>
+    @end
+  </ul>
+@end

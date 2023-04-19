@@ -9,13 +9,13 @@
 
 import type { Edge } from 'edge.js'
 import { fileURLToPath } from 'node:url'
-import { DimerEdgeRenderer } from '@dimerapp/edge'
+import type { PipelineHook } from '@dimerapp/edge/types'
 
 /**
- * The edge renderer to use for rendering markdown elements
+ * The pipeline hook to use custom templates for certain
+ * markdown nodes
  */
-export const docsRenderer = new DimerEdgeRenderer()
-docsRenderer.use((node, renderer) => {
+export const docsHook: PipelineHook = (node, pipeline) => {
   /**
    * Render pre element using a custom edge component
    */
@@ -23,7 +23,7 @@ docsRenderer.use((node, renderer) => {
     if (node.properties) {
       node.properties.style = ''
     }
-    return ['docs::elements/pre', { node, renderer }]
+    return pipeline.component('docs::elements/pre', { node })
   }
 
   if (!node.properties || !Array.isArray(node.properties.className)) {
@@ -34,16 +34,23 @@ docsRenderer.use((node, renderer) => {
    * Render codegroups using a custom component
    */
   if (node.properties.className.includes('codegroup')) {
-    return ['docs::elements/codegroup', { node, renderer }]
+    return pipeline.component('docs::elements/codegroup', { node })
   }
 
   /**
    * Render alerts using a custom component
    */
   if (node.properties.className.includes('alert')) {
-    return ['docs::elements/alert', { node, renderer }]
+    return pipeline.component('docs::elements/alert', { node })
   }
-})
+
+  /**
+   * Render captions using a custom component
+   */
+  if (node.properties.className.includes('caption')) {
+    return pipeline.component('docs::elements/caption', { node })
+  }
+}
 
 /**
  * Edge plugin to mount the docs theme templates

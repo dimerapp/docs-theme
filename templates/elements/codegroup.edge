@@ -12,7 +12,7 @@
     <div>
       @each(child in node.children)
         @component('ui::components/tabs/panel')
-          @!component('dimer_contents', { nodes: [child], renderer, inTabsLayout: true })~
+          @!component('dimer_contents', { nodes: [child], pipeline, inTabsLayout: true })~
         @end
       @end
     </div>

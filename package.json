@@ -44,7 +44,7 @@
     "@alpinejs/persist": "^3.12.0",
     "@commitlint/cli": "^17.5.1",
     "@commitlint/config-conventional": "^17.4.4",
-    "@dimerapp/edge": "^3.0.0-5",
+    "@dimerapp/edge": "^3.0.0-6",
     "@japa/assert": "^1.3.4",
     "@japa/run-failed-tests": "^1.0.7",
     "@japa/runner": "^2.0.9",
@@ -54,7 +54,7 @@
     "alpinejs": "^3.12.0",
     "c8": "^7.13.0",
     "copyfiles": "^2.4.1",
-    "del-cli": "^4.0.1",
+    "del-cli": "^5.0.0",
     "edge-uikit": "^0.0.1-3",
     "edge.js": "^5.5.1",
     "eslint": "^8.17.0",
@@ -66,7 +66,11 @@
     "np": "^7.6.1",
     "prettier": "^2.7.1",
     "ts-node": "^10.8.1",
-    "typescript": "^4.7.3"
+    "typescript": "^5.0.3"
+  },
+  "peerDependencies": {
+    "@dimerapp/edge": "^3.0.0-6",
+    "edge.js": "^5.5.1"
   },
   "eslintConfig": {
     "extends": [
