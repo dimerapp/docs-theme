@@ -16,7 +16,7 @@
     ".": "./build/index.js",
     "./types": "./build/src/types.js",
     "./styles": "./build/css/main.css",
-    "./js": "./build/js/main.js"
+    "./scripts": "./build/js/main.js"
   },
   "scripts": {
     "pretest": "npm run lint",
