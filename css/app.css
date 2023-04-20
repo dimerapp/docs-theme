@@ -289,13 +289,17 @@ body {
 .content_footer_container a {
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 8px;
   color: var(--mauve11);
   transition: color .1s ease-in-out;
 }
 
 .content_footer_container a:hover {
   color: var(--mauve12);
+}
+
+.content_footer_container a svg {
+  width: 20px;
 }
 
 .document_errors {
