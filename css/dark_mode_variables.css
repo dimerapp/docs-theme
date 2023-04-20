@@ -61,9 +61,9 @@ html.dark {
   --pre-tabs-text-color: var(--mauve11);
   --pre-tabs-active-text-color: var(--mauve12);
   --pre-tabs-active-border-color: var(--violet10);
-  --copy-code-text-color: hsl(0deg 0% 38.45%);
-  --copy-code-bg-color: hsl(260deg 4.16% 12.03%);
-  --copy-code-border-color: hsl(260deg 4.77% 21.71%);
+  --copy-code-text-color: hsl(0deg 0.84% 36.56%);
+  --copy-code-bg-color: hsl(260deg 2.99% 14.21%);
+  --copy-code-border-color: hsl(260deg 1.68% 21.01%);
   --note-icon-color: var(--violet10);
   --warning-icon-color: hsl(48deg 39.14% 54.95%);
   --success-tick-color: hsl(151, 55.0%, 41.5%);

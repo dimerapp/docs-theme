@@ -61,9 +61,9 @@
   --pre-tabs-text-color: var(--mauve8);
   --pre-tabs-active-text-color: var(--mauve1);
   --pre-tabs-active-border-color: var(--violet8);
-  --copy-code-text-color: hsl(0deg 0.39% 49.81%);
-  --copy-code-bg-color: hsl(260deg 8.79% 17.57%);
-  --copy-code-border-color: hsl(260deg 2.18% 34.05%);
+  --copy-code-text-color: hsl(0deg 0% 41.59%);
+  --copy-code-bg-color: hsl(260deg 11.09% 10.15%);
+  --copy-code-border-color: hsl(260deg 4.2% 24.25%);
   --note-icon-color: var(--violet10);
   --warning-icon-color: hsl(35, 100%, 55.5%);
   --success-tick-color: hsl(151, 55.0%, 41.5%);
