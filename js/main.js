@@ -27,6 +27,9 @@ export default function (Alpine) {
    */
   Alpine.store('offcanvasMenu', {
     active: false,
+    hide() {
+      this.active = false
+    },
     toggle() {
       this.active = !this.active
       if (this.active) {

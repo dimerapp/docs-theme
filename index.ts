@@ -32,6 +32,10 @@ export const docsHook: PipelineHook = (node, pipeline) => {
     }
   }
 
+  if (node.tagName === 'table') {
+    return pipeline.component('docs::elements/table', { node })
+  }
+
   /**
    * Render pre element using a custom edge component
    */

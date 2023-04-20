@@ -298,7 +298,7 @@
   max-width: 100%;
 }
 
-.markdown .table-container {
+.markdown .table_container {
   max-width: 100%;
   overflow-x: scroll;
 }
