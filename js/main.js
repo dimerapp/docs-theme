@@ -29,13 +29,17 @@ export default function (Alpine) {
     active: false,
     hide() {
       this.active = false
+      document.querySelector('body').style.overflow = 'initial'
+    },
+    show() {
+      this.active = true
+      document.querySelector('body').style.overflow = 'hidden'
     },
     toggle() {
-      this.active = !this.active
       if (this.active) {
-        document.querySelector('body').style.overflow = 'hidden'
+        this.hide()
       } else {
-        document.querySelector('body').style.overflow = 'initial'
+        this.show()
       }
     },
   })

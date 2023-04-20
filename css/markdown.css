@@ -122,7 +122,9 @@
   color: var(--code-text-color);
   -webkit-font-smoothing: initial;
   -moz-osx-font-smoothing: initial;
-  white-space: nowrap;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
   padding: 0px 3px;
   font-weight: var(--code-font-weight);
 }
@@ -252,7 +254,6 @@
 }
 
 .markdown pre code {
-  width: 100%;
 }
 
 .markdown pre .line {
