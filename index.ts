@@ -16,6 +16,22 @@ import type { PipelineHook } from '@dimerapp/edge/types'
  * markdown nodes
  */
 export const docsHook: PipelineHook = (node, pipeline) => {
+  if (node.tagName === 'a') {
+    node.properties = node.properties || {}
+    const url = node.properties.href
+    if (typeof url !== 'string') {
+      return
+    }
+
+    if (url.startsWith('https://') || url.startsWith('http://')) {
+      node.properties.target = '_blank'
+      node.properties.rel = 'noopener noreferrer'
+    } else if (!url.startsWith('#')) {
+      node.properties['up-target'] = '[layout-shell]'
+      node.properties['up-preload'] = ''
+    }
+  }
+
   /**
    * Render pre element using a custom edge component
    */
