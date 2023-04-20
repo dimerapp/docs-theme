@@ -28,12 +28,16 @@ export default function (Alpine) {
   Alpine.store('offcanvasMenu', {
     active: false,
     hide() {
-      this.active = false
-      document.querySelector('body').style.overflow = 'initial'
+      if (this.active) {
+        this.active = false
+        document.querySelector('body').style.overflow = 'initial'
+      }
     },
     show() {
-      this.active = true
-      document.querySelector('body').style.overflow = 'hidden'
+      if (!this.active) {
+        this.active = true
+        document.querySelector('body').style.overflow = 'hidden'
+      }
     },
     toggle() {
       if (this.active) {
