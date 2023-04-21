@@ -115,6 +115,7 @@
 .markdown code {
   font-size: var(--code-font-size);
   font-family: var(--font-mono);
+  flex: 1;
 }
 
 .markdown :not(pre) > code {
