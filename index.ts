@@ -16,6 +16,10 @@ import type { PipelineHook } from '@dimerapp/edge/types'
  * markdown nodes
  */
 export const docsHook: PipelineHook = (node, pipeline) => {
+  /**
+   * Opening third-party URLs inside a new tab
+   * Opening relative in-app URLs using unpoly.
+   */
   if (node.tagName === 'a') {
     node.properties = node.properties || {}
     const url = node.properties.href
@@ -32,6 +36,9 @@ export const docsHook: PipelineHook = (node, pipeline) => {
     }
   }
 
+  /**
+   * Rendering tables using a custom component
+   */
   if (node.tagName === 'table') {
     return pipeline.component('docs::elements/table', { node })
   }
