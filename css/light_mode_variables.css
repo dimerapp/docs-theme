@@ -68,7 +68,7 @@
   --warning-icon-color: hsl(35, 100%, 55.5%);
   --success-tick-color: hsl(151, 55.0%, 41.5%);
   --code-comment-color: var(--mauve9);
-  --code-highlight-color: hsl(0deg 0.09% 70.27% / 20%);
+  --code-highlight-color: hsl(260deg 20.58% 32.17% / 30%);
   --code-insert-bg-color: hsla(156, 99.9%, 62.0%, 0.187);
   --code-delete-bg-color: hsla(358, 99.6%, 60.3%, 0.322);
   --sidebar-backdrop-color: hsl(0deg 0% 0% / 20%);

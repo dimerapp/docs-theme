@@ -338,6 +338,7 @@
 
 .markdown table tr td code {
   font-size: var(--prose-table-font-size);
+  white-space: nowrap;
 }
 
 .markdown .alert {
@@ -432,6 +433,8 @@
   margin-top: 3px;
   display: flex;
   justify-content: center;
+  width: 22px;
+  height: 22px;
   align-items: center;
 }
 
@@ -444,8 +447,6 @@
 }
 
 .markdown .caption_icon svg {
-  width: 6px;
-  height: 6px;
   overflow: visible;
 }
 

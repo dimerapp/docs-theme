@@ -141,7 +141,6 @@ export default function (Alpine) {
       },
 
       destroy() {
-        console.log('removing scroll listener')
         window.removeEventListener('scroll', this.scrollListener)
       },
     }
