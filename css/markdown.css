@@ -36,6 +36,10 @@
   padding-top: var(--prose-section-padding-top);
   border-top: 1px solid var(--prose-section-border-color);
   position: relative;
+
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
 }
 
 .markdown h3 {
@@ -49,6 +53,10 @@
   margin-top: var(--prose-sub-section-margin-top);
   padding-top: var(--prose-sub-section-padding-top);
   position: relative;
+
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
 }
 
 .markdown h4 {
@@ -60,11 +68,14 @@
 
   font-weight: var(--prose-h4-font-weight);
   position: relative;
+
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
 }
 
 .markdown h2 a[aria-hidden="true"], .markdown h3 a[aria-hidden="true"], .markdown h4 a[aria-hidden="true"] {
-  padding-left: 30px;
-  margin-left: -30px;
+  margin-left: 8px;
   opacity: 0;
 }
 
@@ -76,8 +87,7 @@
 .markdown h2 a[aria-hidden="true"] .icon.icon-link, .markdown h3 a[aria-hidden="true"] .icon.icon-link, .markdown h4 a[aria-hidden="true"] .icon.icon-link {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='none' aria-hidden='true'%3E%3Cpath d='M3.75 1v10M8.25 1v10M1 3.75h10M1 8.25h10' stroke='%2372716d' stroke-width='1.5' stroke-linecap='round'%3E%3C/path%3E%3C/svg%3E");
   background-repeat: no-repeat;
-  position: absolute;
-  left: -35px;
+  display: block;
   border: 1px solid var(--mauve7);
   border-radius: var(--rounded-sm);
 }
@@ -92,14 +102,13 @@
   background-position: 6px 6px;
   height: 26px;
   width: 26px;
-  margin-top: -1px;
+  margin-top: -3px;
 }
 
 .markdown h4 a[aria-hidden="true"] .icon.icon-link {
   background-position: 4px 4px;
   height: 22px;
   width: 22px;
-  left: -30px;
 }
 
 .markdown a {
@@ -488,4 +497,30 @@
 
 .markdown dd code {
   font-size: var(--prose-dl-font-size);
+}
+
+@media (min-width: 768px) {
+  .markdown h2, .markdown h3, .markdown h4 {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .markdown h2 a[aria-hidden="true"] {
+    margin-left: -38px;
+    padding-right: 10px;
+  }
+
+  .markdown h3 a[aria-hidden="true"] {
+    margin-left: -36px;
+    padding-right: 10px;
+  }
+
+  .markdown h4 a[aria-hidden="true"] {
+    margin-left: -32px;
+    padding-right: 10px;
+  }
+
+  .markdown h3 a[aria-hidden="true"] .icon.icon-link {
+    margin-top: -1px;
+  }
 }

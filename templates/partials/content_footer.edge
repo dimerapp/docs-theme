@@ -1,0 +1,15 @@
+<div class="content_footer">
+  <div class="content_footer_container">
+    <span>&copy; {{ new Date().getFullYear() }} {{ copyRightName }}</span>
+    @if(fileEditUrl)
+      <a
+        href="{{ fileEditUrl }}"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        @include('docs::partials/icons/octocat')
+        <span> Edit this page </span>
+      </a>
+    @end
+  </div>
+</div>

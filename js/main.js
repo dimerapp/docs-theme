@@ -17,6 +17,12 @@ export default function (Alpine) {
    */
   Alpine.store('darkMode', {
     enabled: Alpine.$persist(true).as('darkMode_enabled'),
+    enable() {
+      this.enabled = true
+    },
+    disable() {
+      this.enabled = false
+    },
     toggle() {
       this.enabled = !this.enabled
     },
@@ -26,6 +32,32 @@ export default function (Alpine) {
    * Offcanvas menu store
    */
   Alpine.store('offcanvasMenu', {
+    active: false,
+    hide() {
+      if (this.active) {
+        this.active = false
+        document.querySelector('body').style.overflow = 'initial'
+      }
+    },
+    show() {
+      if (!this.active) {
+        this.active = true
+        document.querySelector('body').style.overflow = 'hidden'
+      }
+    },
+    toggle() {
+      if (this.active) {
+        this.hide()
+      } else {
+        this.show()
+      }
+    },
+  })
+
+  /**
+   * Popup menu
+   */
+  Alpine.store('popupMenu', {
     active: false,
     hide() {
       if (this.active) {

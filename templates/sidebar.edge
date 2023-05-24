@@ -1,30 +1,32 @@
-<div class="docs_sidebar_wrapper" x-data x-show="$store.offcanvasMenu.active">
-  <div class="docs_sidebar">
+<div class="docs_sidebar_wrapper" x-data>
+  <div
+    class="docs_sidebar_overlay md_hidden"
+    :class="{ visible: $store.offcanvasMenu.active }"
+    @click="$store.offcanvasMenu.hide()"
+  ></div>
+
+  <div
+    class="docs_sidebar"
+    :class="{ visible: $store.offcanvasMenu.active }"
+  >
     <div class="docs_sidebar_container">
       <nav>
         <ul>
           @each(section in sections)
             @if(collapsible)
               <li
-                class="sidebar_section"
+                class="sidebar_section {{ section.isActive ? 'expanded' : '' }}"
                 x-data="{ expanded: {{ !!section.isActive }} }"
                 :class="{ expanded }"
               >
-                <button class="section_section_title" @click.prevent="expanded = !expanded">
+                <button class="sidebar_section_title" @click.prevent="expanded = !expanded">
                   <span>{{ section.title }}</span>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    aria-hidden="true"
-                    focusable="false"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M9,19c-0.3,0-0.5-0.1-0.7-0.3c-0.4-0.4-0.4-1,0-1.4l5.3-5.3L8.3,6.7c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l6,6c0.4,0.4,0.4,1,0,1.4l-6,6C9.5,18.9,9.3,19,9,19z" fill="currentColor"></path>
-                  </svg>
+                  @include('docs::partials/icons/chevron')
                 </button>
-                <ul class="sidebar_section_items" x-show="expanded">
+                <ul class="sidebar_section_items">
             @else
               <li class="sidebar_section expanded">
-                <button class="section_section_title">
+                <button class="sidebar_section_title">
                   <span>{{ section.title }}</span>
                 </button>
                 <ul class="sidebar_section_items">

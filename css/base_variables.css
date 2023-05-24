@@ -2,18 +2,27 @@
   --font-sans: 'Untitled Sans';
   --font-mono: 'Fira code';
 
+  --header-z-index: 10;
+  --sidebar-overlay-z-index: 11;
+  --sidebar-z-index: 12;
+  --popup-overlay-z-index: 11;
+  --popup-z-index: 12;
+
+  --base-line-height: 1;
+
   --rounded-sm: 6px;
   --rounded-md: 8px;
   --header-height: 61px;
-  --sidebar-width: 100vw;
+  --local-header-height: 42px;
+  --sidebar-width: 70vw;
   --aside-width: 48px;
   --surface-spacing: 24px;
   --logo-container-width: 35px;
 
-  --base-line-height: 1;
-
   --content-width: 780px;
   --markdown-width: 670px;
+  --search-max-width: 780px;
+  --popup-menu-width: 240px;
 
   --prose-font-size: 15px;
   --prose-line-height: 25px;
@@ -69,6 +78,8 @@
   --prose-dl-line-height: 22px;
   --prose-dl-spacing: 22px;
 
+  --header-anchor-font-size: 14px;
+
   --sidebar-title-padding-bottom: 10px;
   --sidebar-title-padding-top: 10px;
   --sidebar-title-padding-left: 15px;
@@ -112,5 +123,6 @@
     --sidebar-title-font-size: 16px;
     --sidebar-anchor-font-size: 14px;
     --sidebar-dropdown-icon-size: 15px;
+    --header-anchor-font-size: 15px;
   }
 }

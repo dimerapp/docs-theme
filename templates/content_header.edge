@@ -1,0 +1,11 @@
+<div class="docs_local_nav_wrapper md_hidden">
+  <div class="docs_local_nav" up-fixed="top">
+    <div class="docs_local_nav_container">
+      <button @click="$store.offcanvasMenu.show()">
+        <span class="sr_only"> Toggle docs menu </span>
+        @include('docs::partials/icons/hamburger')
+      </button>
+      <p> {{ title }} </p>
+    </div>
+  </div>
+</div>

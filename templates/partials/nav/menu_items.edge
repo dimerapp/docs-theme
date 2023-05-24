@@ -1,0 +1,14 @@
+@each(item in menu)
+  <li class="header_nav_menu_item">
+    <a
+      href="{{ item.href }}"
+      {{
+        item.href.startsWith('http://') || item.href.startsWith('https://')
+          ? 'target="_blank" rel="noopener noreferrer"'
+          : 'up-target=body up-preload'
+      }}
+    >
+      {{ item.title }}
+    </a>
+  </li>
+@end

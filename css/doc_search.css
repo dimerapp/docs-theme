@@ -1,6 +1,7 @@
 :root {
 	--search-input-height: 35px;
-	--search-bg-color: var(--mauve5);
+	--search-bg-color: var(--mauve6);
+  --docsearch-default-text-color: hsl(247deg 97.9% 3.2% / 65%);
 	--docsearch-text-color: var(--base-text-color);
 	--docsearch-muted-color: var(--mauve11);
 	--docsearch-searchbox-focus-background: var(--mauve5);
@@ -36,11 +37,12 @@
 	font-weight: 400;
 	padding: 0 20px;
 	margin: 0;
+  color: var(--docsearch-default-text-color);
 }
 
 .DocSearch-Button .DocSearch-Search-Icon {
 	width: 15px;
-	color: var(--docsearch-muted-color);
+	color: var(--docsearch-default-text-color);
 }
 
 .DocSearch-Button-Placeholder {
@@ -64,4 +66,6 @@
 html.dark {
 	--docsearch-hit-active-color: var(--mauve12);
 	--docsearch-modal-shadow: inset 1px 1px 0 0 hsl(0deg 1.2% 14.77% / 50%),0 3px 8px 0 #171718;
+  --search-bg-color: var(--mauve5);
+  --docsearch-default-text-color: var(--mauve11);
 }

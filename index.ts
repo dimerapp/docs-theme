@@ -17,6 +17,21 @@ import type { PipelineHook } from '@dimerapp/edge/types'
  */
 export const docsHook: PipelineHook = (node, pipeline) => {
   /**
+   * Wrapping headings text inside a span
+   */
+  if (node.tagName === 'h2' || node.tagName === 'h3' || node.tagName === 'h4') {
+    node.children = [
+      node.children.shift()!,
+      {
+        type: 'element',
+        tagName: 'span',
+        properties: {},
+        children: node.children,
+      },
+    ]
+  }
+
+  /**
    * Opening third-party URLs inside a new tab
    * Opening relative in-app URLs using unpoly.
    */

@@ -3,21 +3,6 @@
     <article class="markdown">
       {{{ await $slots.main() }}}
     </article>
-
-    <div class="content_footer">
-      <div class="content_footer_container">
-        <span>&copy; {{ new Date().getFullYear() }} AdonisJS</span>
-        @if(fileEditUrl)
-          <a
-            href="{{ fileEditUrl }}"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            @include('docs::partials/icons/octocat')
-            <span> Edit this page </span>
-          </a>
-        @end
-      </div>
-    </div>
+    @include('docs::partials/content_footer')
   </div>
 </div>

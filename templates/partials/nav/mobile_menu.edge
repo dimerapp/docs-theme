@@ -1,0 +1,34 @@
+<div
+  class="popup_menu_container md_hidden"
+  :class="{ visible: $store.popupMenu.active }"
+>
+  <div class="popup_menu_overlay" @click="$store.popupMenu.hide()"></div>
+  <div class="popup_menu">
+    <ul class="header_nav_menu">
+      @include('docs::partials/nav/menu_items')
+
+      @if(links.github)
+        <li class="header_nav_menu_item">
+          <a
+            href="{{ links.github.href }}"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="{{ links.github.title }}"
+          >
+            Github
+          </a>
+        </li>
+      @end
+
+      <li class="header_nav_menu_item_separator"></li>
+
+      <li class="header_nav_menu_item header_nav_menu_theme_switcher">
+        <label for="theme_switcher"> Theme </label>
+        <select @change="(e) => e.target.value === 'dark' ? $store.darkMode.enable() : $store.darkMode.disable()">
+          <option value="dark" :selected="$store.darkMode.enabled"> Dark </option>
+          <option value="light" :selected="!$store.darkMode.enabled"> Light </option>
+        </select>
+      </li>
+    </ul>
+  </div>
+</div>

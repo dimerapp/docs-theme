@@ -1,0 +1,15 @@
+<ul class="header_nav_menu hidden md_flex">
+  @include('docs::partials/nav/menu_items')
+
+  <li class="header_nav_menu_item_separator"></li>
+
+  <li class="header_nav_menu_item">
+    @include('docs::partials/nav/theme_switcher')
+  </li>
+
+  @if(links.github)
+    <li class="header_nav_menu_item">
+      @include('docs::partials/nav/octocat')
+    </li>
+  @end
+</ul>

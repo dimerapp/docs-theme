@@ -1,0 +1,30 @@
+<div class="aside_container">
+  <nav class="header_nav_items">
+    @if(menu)
+      @include('docs::partials/nav/desktop_menu')
+      <button class="menu_toggler md_hidden" @click="$store.popupMenu.show()">
+        <span class="sr_only"> Toggle Menu </span>
+        @include('docs::partials/icons/menu')
+      </button>
+    @end
+
+    @if(!menu)
+      <ul class="header_nav_menu compact flex">
+        <li class="header_nav_menu_item">
+          @include('docs::partials/nav/theme_switcher')
+        </li>
+
+        @if(links.github)
+          <li class="header_nav_menu_item">
+            @include('docs::partials/nav/octocat')
+          </li>
+        @end
+      </ul>
+    @end
+  </nav>
+
+  {{-- Popup --}}
+  @if(menu)
+    @include('docs::partials/nav/mobile_menu')
+  @end
+</div>
