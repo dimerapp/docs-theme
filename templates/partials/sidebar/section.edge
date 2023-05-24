@@ -1,6 +1,6 @@
 @if(collapsible)
   <li
-    class="sidebar_section {{ section.isActive ? 'expanded' : '' }}"
+    class="sidebar_section{{ section.isActive ? ' expanded' : '' }}"
     x-data="{ expanded: {{ !!section.isActive }} }"
     :class="{ expanded }"
   >
