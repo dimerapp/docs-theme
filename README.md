@@ -40,17 +40,20 @@ Once done, you use the following components to render the docs header, sidebar, 
   @end
 @end
 
-<section>
+<section layout-shell>
   @!component('docs::sidebar', {
     collapsible: true,
     sections: sidebarSections
   })
 
   <main layout-main>
+    @!component('docs::content_header', { title: file.frontmatter.title })
+
     @component('docs::content')
       @!component('docs::doc_errors', { messages: file.messages })
       @!component('dimer_contents', { nodes: file.ast.children, pipeline })~
     @end
+
     @if(file.toc)
       @component('docs::toc')
         @!component('dimer_element', { node: file.toc, pipeline })~
