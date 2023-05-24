@@ -1,0 +1,16 @@
+<ul class="sidebar_section_items">
+  @each(item in section.items)
+    <li class="sidebar_section_item">
+      <a
+        href="{{ item.href }}"
+        up-preload
+        up-focus="false"
+        up-target="[layout-main]"
+        class="{{ item.isActive ? 'up-current' : '' }}"
+        @click="$store.offcanvasMenu.hide()"
+      >
+        {{ item.title }}
+      </a>
+    </li>
+  @end
+</ul>

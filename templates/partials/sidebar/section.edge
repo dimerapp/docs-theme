@@ -1,0 +1,20 @@
+@if(collapsible)
+  <li
+    class="sidebar_section {{ section.isActive ? 'expanded' : '' }}"
+    x-data="{ expanded: {{ !!section.isActive }} }"
+    :class="{ expanded }"
+  >
+    <button class="sidebar_section_title" @click.prevent="expanded = !expanded">
+      <span>{{ section.title }}</span>
+      @include('docs::partials/icons/chevron')
+    </button>
+    @include('docs::partials/sidebar/section_items')
+  </li>
+@else
+  <li class="sidebar_section expanded">
+    <button class="sidebar_section_title">
+      <span>{{ section.title }}</span>
+    </button>
+    @include('docs::partials/sidebar/section_items')
+  </li>
+@end

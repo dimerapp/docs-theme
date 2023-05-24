@@ -13,40 +13,7 @@
       <nav>
         <ul>
           @each(section in sections)
-            @if(collapsible)
-              <li
-                class="sidebar_section {{ section.isActive ? 'expanded' : '' }}"
-                x-data="{ expanded: {{ !!section.isActive }} }"
-                :class="{ expanded }"
-              >
-                <button class="sidebar_section_title" @click.prevent="expanded = !expanded">
-                  <span>{{ section.title }}</span>
-                  @include('docs::partials/icons/chevron')
-                </button>
-                <ul class="sidebar_section_items">
-            @else
-              <li class="sidebar_section expanded">
-                <button class="sidebar_section_title">
-                  <span>{{ section.title }}</span>
-                </button>
-                <ul class="sidebar_section_items">
-            @end
-                @each(item in section.items)
-                  <li class="sidebar_section_item">
-                    <a
-                      href="{{ item.href }}"
-                      up-preload
-                      up-focus="false"
-                      up-target="[layout-main]"
-                      class="{{ item.isActive ? 'up-current' : '' }}"
-                      @click="$store.offcanvasMenu.hide()"
-                    >
-                      {{ item.title }}
-                    </a>
-                  </li>
-                @end
-              </ul>
-            </li>
+            @include('docs::partials/sidebar/section')
           @end
         </ul>
       </nav>

@@ -1,12 +1,12 @@
 :root {
-  --font-sans: 'Untitled Sans';
-  --font-mono: 'Fira code';
+  --font-sans: 'Untitled Sans', -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  --font-mono: 'Fira code', Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
 
   --header-z-index: 10;
-  --sidebar-overlay-z-index: 11;
   --sidebar-z-index: 12;
-  --popup-overlay-z-index: 11;
+  --sidebar-overlay-z-index: 11;
   --popup-z-index: 12;
+  --popup-overlay-z-index: 11;
 
   --base-line-height: 1;
 
