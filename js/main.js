@@ -10,7 +10,7 @@
 /**
  * @param {import('alpinejs').default} Alpine
  */
-export default function (Alpine) {
+export function initBaseComponents(Alpine) {
   /**
    * Dark mode store is used to toggle the dark mode
    * across the app
@@ -182,7 +182,10 @@ export default function (Alpine) {
 /**
  * Initiate search plugin
  */
-export const initSearch = (docsearch) => {
+export function initSearchComponent(docsearch) {
+  /**
+   * @param {import('alpinejs').default} Alpine
+   */
   return function (Alpine) {
     /**
      * Search widget
@@ -196,6 +199,33 @@ export const initSearch = (docsearch) => {
             indexName: options.indexName,
             apiKey: options.apiKey,
           })
+        },
+      }
+    })
+  }
+}
+
+/**
+ * Initiate image zoom plugin
+ */
+export function initZoomComponent(mediumZoom) {
+  /**
+   * @param {import('alpinejs').default} Alpine
+   */
+  return function (Alpine) {
+    /**
+     * Search widget
+     */
+    Alpine.data('zoom', function () {
+      return {
+        zoom: null,
+        init() {
+          this.zoom = mediumZoom(this.$root.querySelector('img'))
+        },
+        destroy() {
+          if (this.zoom) {
+            this.zoom.detach()
+          }
         },
       }
     })

@@ -71,11 +71,17 @@ You may import the styles and scripts as follows.
 ```
 
 ```js
+import mediumZoom from 'medium-zoom'
 import docsearch from '@docsearch/js'
-import { initAlpinePlugins, initSearch } from '@dimerapp/docs-theme/scripts'
+import {
+  initZoomComponent,
+  initBaseComponents,
+  initSearchComponent
+} from '@dimerapp/docs-theme/scripts'
 
-Alpine.plugin(initAlpinePlugins)
-Alpine.plugin(initSearch(docsearch))
+Alpine.plugin(initBaseComponents)
+Alpine.plugin(initSearchComponent(docsearch))
+Alpine.plugin(initZoomComponent(mediumZoom))
 ```
 
 [gh-workflow-image]: https://img.shields.io/github/actions/workflow/status/dimerapp/docs-theme/test.yml?style=for-the-badge
