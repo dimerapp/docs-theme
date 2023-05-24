@@ -2,7 +2,7 @@
 
 <br />
 
-[![gh-workflow-image]][gh-workflow-url] [![npm-image]][npm-url] ![][typescript-image] [![license-image]][license-url] [![snyk-image]][snyk-url]
+[![npm-image]][npm-url] ![][typescript-image] [![license-image]][license-url] [![snyk-image]][snyk-url]
 
 The docs theme provides ready to use Edge templates, CSS and frontend JavaScript to create a documentation layout. This package must be used with [@dimerapp/content](https://github.com/dimerapp/content) package.
 
@@ -83,9 +83,6 @@ Alpine.plugin(initBaseComponents)
 Alpine.plugin(initSearchComponent(docsearch))
 Alpine.plugin(initZoomComponent(mediumZoom))
 ```
-
-[gh-workflow-image]: https://img.shields.io/github/actions/workflow/status/dimerapp/docs-theme/test.yml?style=for-the-badge
-[gh-workflow-url]: https://github.com/dimerapp/docs-theme/actions/workflows/test.yml "Github action"
 
 [npm-image]: https://img.shields.io/npm/v/@dimerapp/docs-theme/latest.svg?style=for-the-badge&logo=npm
 [npm-url]: https://www.npmjs.com/package/@dimerapp/docs-theme/v/latest "npm"

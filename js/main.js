@@ -8,6 +8,16 @@
  */
 
 /**
+ * Scroll the active sidebar item into the view on page load
+ */
+const activeSidebarItem = document.querySelector('.docs_sidebar a.up-current')
+if (activeSidebarItem) {
+  activeSidebarItem.scrollIntoView({
+    block: 'center',
+  })
+}
+
+/**
  * @param {import('alpinejs').default} Alpine
  */
 export function initBaseComponents(Alpine) {
