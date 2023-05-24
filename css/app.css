@@ -378,6 +378,12 @@ html.light .dark_mode_icon_sun {
   color: var(--sidebar-hover-link-text-color);
 }
 
+.sidebar_section_item a.up-active {
+  background: var(--sidebar-loading-link-bg-color);
+  color: var(--sidebar-active-link-text-color);
+  font-weight: 500;
+}
+
 .sidebar_section_item a.up-current {
   background: var(--sidebar-active-link-bg-color);
   color: var(--sidebar-active-link-text-color);
