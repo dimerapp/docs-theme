@@ -137,7 +137,7 @@ body {
   color: var(--nav-items-hover-link-color);
 }
 
-.header_nav_items .dark_mode_icon_sun, .header_nav_items .dark_mode_icon_moon {
+.header_nav_items .theme_switcher_light_mode, .header_nav_items .theme_switcher_dark_mode {
   display: none;
   margin-top: 2px;
 }
@@ -147,21 +147,21 @@ body {
   height: 24px;
 }
 
-.header_nav_items .icon_octocat svg {
+.header_nav_items .link_github svg {
   width: 20px;
   height: 20px;
 }
 
-.header_nav_items .dark_mode_icon_sun svg, .header_nav_items .dark_mode_icon_moon svg {
+.header_nav_items .theme_switcher_light_mode svg, .header_nav_items .theme_switcher_dark_mode svg {
   width: 22px;
   height: 22px;
 }
 
-html.dark .dark_mode_icon_moon {
+html.dark .theme_switcher_dark_mode {
   display: block;
 }
 
-html.light .dark_mode_icon_sun {
+html.light .theme_switcher_light_mode {
   display: block;
 }
 
