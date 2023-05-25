@@ -1,5 +1,6 @@
 :root {
   --font-sans: 'Untitled Sans', -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  --font-display: var(--font-sans);
   --font-mono: 'Fira code', Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
 
   --header-z-index: 10;
@@ -37,24 +38,28 @@
   --prose-p-margin-bottom: 15px;
 
   --prose-h1-margin-bottom: 24px;
+  --prose-h1-font-family: var(--font-display);
   --prose-h1-font-size: 35px;
   --prose-h1-line-height: 40px;
   --prose-h1-letter-spacing: -1.19px;
   --prose-h1-font-weight: 500;
 
   --prose-h2-margin-bottom: 10px;
+  --prose-h2-font-family: var(--font-display);
   --prose-h2-font-size: 21px;
   --prose-h2-line-height: 25px;
   --prose-h2-letter-spacing: -0.837px;
   --prose-h2-font-weight: 500;
 
   --prose-h3-margin-bottom: 5px;
+  --prose-h3-font-family: var(--font-display);
   --prose-h3-font-size: 17px;
   --prose-h3-line-height: 20px;
   --prose-h3-letter-spacing: -0.285px;
   --prose-h3-font-weight: 500;
 
   --prose-h4-margin-bottom: 5px;
+  --prose-h4-font-family: var(--font-display);
   --prose-h4-font-size: 16px;
   --prose-h4-line-height: 18px;
   --prose-h4-letter-spacing: -0.225px;
@@ -81,6 +86,7 @@
   --prose-dl-spacing: 22px;
 
   --header-anchor-font-size: 14px;
+  --header-anchor-font-family: var(--font-display);
 
   --sidebar-title-padding-bottom: 10px;
   --sidebar-title-padding-top: 10px;
@@ -89,6 +95,7 @@
   --sidebar-title-font-size: 15px;
   --sidebar-title-line-height: 1;
   --sidebar-title-font-weight: 500;
+  --sidebar-title-font-family: var(--font-display);
 
   --sidebar-anchor-padding-bottom: 10px;
   --sidebar-anchor-padding-top: 10px;
@@ -97,6 +104,7 @@
   --sidebar-anchor-font-size: 13px;
   --sidebar-anchor-line-height: 1;
   --sidebar-dropdown-icon-size: 14px;
+  --sidebar-anchor-font-family: var(--font-sans);
 
   --pre-title-font-size: 15px;
 }

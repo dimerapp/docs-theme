@@ -22,6 +22,7 @@
   line-height: var(--prose-h1-line-height);
   letter-spacing: var(--prose-h1-letter-spacing);
   font-weight: var(--prose-h1-font-weight);
+  font-family: var(--prose-h1-font-family);
 }
 
 .markdown h2 {
@@ -31,6 +32,7 @@
   line-height: var(--prose-h2-line-height);
   letter-spacing: var(--prose-h2-letter-spacing);
   font-weight: var(--prose-h2-font-weight);
+  font-family: var(--prose-h2-font-family);
 
   margin-top: var(--prose-section-margin-top);
   padding-top: var(--prose-section-padding-top);
@@ -48,6 +50,7 @@
   font-size: var(--prose-h3-font-size);
   line-height: var(--prose-h3-line-height);
   letter-spacing: var(--prose-h3-letter-spacing);
+  font-family: var(--prose-h3-font-family);
 
   font-weight: var(--prose-h3-font-weight);
   margin-top: var(--prose-sub-section-margin-top);
@@ -65,6 +68,7 @@
   font-size: var(--prose-h4-font-size);
   line-height: var(--prose-h4-line-height);
   letter-spacing: var(--prose-h4-letter-spacing);
+  font-family: var(--prose-h4-font-family);
 
   font-weight: var(--prose-h4-font-weight);
   position: relative;
