@@ -3,8 +3,12 @@
     @if(menu)
       @include('docs::partials/nav/desktop_menu')
       <button class="menu_toggler md_hidden" @click="$store.popupMenu.show()">
-        <span class="sr_only"> Toggle Menu </span>
-        @include('docs::partials/icons/menu')
+        @if($slots.popupMenu)
+          {{{ await $slots.popupMenu() }}}
+        @else
+          <span class="sr_only"> Toggle Menu </span>
+          @include('docs::partials/icons/menu')
+        @end
       </button>
     @end
 

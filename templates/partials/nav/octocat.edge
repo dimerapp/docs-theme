@@ -5,6 +5,10 @@
   rel="noopener noreferrer"
   title="{{ links.github.title }}"
 >
-  <span class="sr_only">{{ links.github.title || 'Visit us on Github' }}</span>
-  @include('docs::partials/icons/octocat')
+  @if($slots.github)
+    {{{ await $slots.github(links.github) }}}
+  @else
+    <span class="sr_only">{{ links.github.title || 'Visit us on Github' }}</span>
+    @include('docs::partials/icons/octocat')
+  @end
 </a>

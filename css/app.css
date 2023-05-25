@@ -75,7 +75,7 @@ body {
 
 .logo_container svg {
   transition: transform .2s ease;
-  width: 35px;
+  width: var(--mobile-logo-width);
 }
 
 .logo_container svg:hover {
@@ -530,7 +530,7 @@ html.light .dark_mode_icon_sun {
   }
 
   .logo_container svg {
-    width: 90px;
+    width: var(--logo-width);
   }
 
   .docs_sidebar {
