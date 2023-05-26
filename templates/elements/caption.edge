@@ -1,11 +1,18 @@
 <div class="{{ node.properties.className.join(' ') }}">
-  <div class="caption_icon">
-    @if(node.properties.className.includes('caption-error'))
+  @if(node.properties.className.includes('caption-error'))
+    <div class="caption_icon">
       @include('docs::partials/icons/caption_cross')
-    @else
+    </div>
+  @elseif(node.properties.className.includes('caption-info'))
+    <div class="caption_icon">
+      @include('docs::partials/icons/caption_info')
+    </div>
+  @elseif(node.properties.className.includes('caption-success'))
+    <div class="caption_icon">
       @include('docs::partials/icons/caption_tick')
-    @end
-  </div>
+    </div>
+  @end
+
   <div class="caption_contents">
     @!component('dimer_contents', { nodes: node.children, pipeline })~
   </div>

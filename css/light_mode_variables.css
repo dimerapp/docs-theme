@@ -88,4 +88,6 @@
   --caption-error-bg-color: hsl(358, 75.0%, 59.0%);
   --caption-success-border-color: hsl(151, 55.0%, 41.5%);
   --caption-success-bg-color: hsl(151, 55.0%, 41.5%);
+  --caption-info-border-color: hsl(226, 70.0%, 55.5%);
+  --caption-info-bg-color: hsl(226, 70.0%, 55.5%);
 }

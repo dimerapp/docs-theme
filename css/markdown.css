@@ -439,6 +439,10 @@
   background: var(--caption-success-border-color);
 }
 
+.markdown .caption-info::before {
+  background: var(--caption-info-border-color);
+}
+
 .markdown .caption_icon {
   padding: 0.5rem;
   border-radius: 999px;
@@ -457,6 +461,10 @@
 
 .markdown .caption-success .caption_icon {
   background: var(--caption-success-bg-color);
+}
+
+.markdown .caption-info .caption_icon {
+  background: var(--caption-info-bg-color);
 }
 
 .markdown .caption_icon svg {
