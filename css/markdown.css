@@ -223,7 +223,7 @@
   height: 38px;
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 8px;
   position: relative;
   bottom: 0;
   overflow-x: auto;
@@ -238,7 +238,7 @@
 }
 
 .codegroup_tabs button {
-  padding: 0 8px;
+  padding: 0 6px;
   transition: color .2s ease-in-out;
   color: var(--pre-tabs-text-color);
   white-space: nowrap;
