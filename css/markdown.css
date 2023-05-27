@@ -296,9 +296,27 @@
 .markdown pre .line.highlight-insert {
   background: var(--code-insert-bg-color);
 }
+.markdown pre .line.highlight-insert:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: var(--code-insert-border-color);
+}
 
 .markdown pre .line.highlight-delete {
   background: var(--code-delete-bg-color);
+}
+.markdown pre .line.highlight-delete:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: var(--code-delete-border-color);
 }
 
 .markdown ul {
