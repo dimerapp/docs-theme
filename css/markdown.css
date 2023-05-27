@@ -122,7 +122,7 @@
 
 .markdown strong {
   color: var(--prose-headings-color);
-  font-weight: 500;
+  font-weight: var(--strong-font-weight);
 }
 
 .markdown code {
@@ -136,9 +136,6 @@
   color: var(--code-text-color);
   -webkit-font-smoothing: initial;
   -moz-osx-font-smoothing: initial;
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-  hyphens: auto;
   padding: 0px 3px;
   font-weight: var(--code-font-weight);
 }
@@ -223,12 +220,13 @@
   border-bottom: 1px solid var(--pre-title-border-color);
   padding: 0 var(--prose-elements-spacing);
   font-size: var(--pre-title-font-size);
-  height: 36px;
+  height: 38px;
   display: flex;
   align-items: center;
   gap: 4px;
   position: relative;
   bottom: 0;
+  overflow-x: auto;
 }
 
 .markdown .codegroup_tabs .highlighter {
@@ -240,9 +238,10 @@
 }
 
 .codegroup_tabs button {
-  padding: 0 6px;
+  padding: 0 8px;
   transition: color .2s ease-in-out;
   color: var(--pre-tabs-text-color);
+  white-space: nowrap;
 }
 
 .codegroup_tabs button[aria-selected="true"] {
@@ -282,7 +281,16 @@
 
 .markdown pre .line.highlight {
   position: relative;
-  background: var(--code-highlight-color);
+  background: var(--code-highlight-bg-color);
+}
+.markdown pre .line.highlight:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: var(--code-highlight-border-color);
 }
 
 .markdown pre .line.highlight-insert {
@@ -484,7 +492,7 @@
 .markdown dt {
   font-size: var(--prose-h4-font-size);
   color: var(--prose-headings-color);
-  font-weight: 500;
+  font-weight: var(--prose-h4-font-weight);
   margin-bottom: 5px;
 }
 

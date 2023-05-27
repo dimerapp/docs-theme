@@ -312,7 +312,7 @@ html.light .theme_switcher_light_mode {
   width: var(--sidebar-width);
   border-right: 1px solid var(--sidebar-border-color);
   height: 100%;
-  overflow: scroll;
+  overflow-y: auto;
 }
 
 .docs_sidebar_container nav {
@@ -336,6 +336,7 @@ html.light .theme_switcher_light_mode {
   padding-bottom: var(--sidebar-title-padding-bottom);
   font-size: var(--sidebar-title-font-size);
   font-family: var(--sidebar-title-font-family);
+  letter-spacing: var(--sidebar-title-letter-spacing);
   color: var(--base-text-color);
   display: flex;
   justify-content: space-between;
@@ -420,17 +421,18 @@ html.light .theme_switcher_light_mode {
   width: var(--aside-width);
   padding-top: 30px;
   padding-bottom: 65px;
-  overflow: scroll;
+  overflow-y: auto;
   height: 100%;
 }
 
 .toc_container h3 {
-  line-height: 23px;
-  font-weight: 500;
-  letter-spacing: -0.015em;
-  font-size: 15px;
+  line-height: var(--toc-title-line-height);
+  font-weight: var(--toc-title-font-weight);
+  letter-spacing: var(--toc-title-letter-spacing);
+  font-size: var(--toc-title-font-size);
   padding-left: var(--surface-spacing);
   padding-right: var(--surface-spacing);
+  font-family: var(--toc-title-font-family);
   margin-bottom: 10px;
 }
 

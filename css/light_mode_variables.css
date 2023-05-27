@@ -55,7 +55,7 @@
   --prose-headings-color: var(--base-text-color);
   --pre-background-color: var(--mauve12);
   --code-text-color: var(--violet11);
-  --code-bg-color: var(--violet3);
+  --code-bg-color: var(--mauve5);
   --sidebar-link-text-color: var(--base-text-color);
   --sidebar-overlay-bg-color: rgba(0, 0, 0, .6);
   --sidebar-hover-link-bg-color: var(--mauveA5);
@@ -77,9 +77,12 @@
   --warning-icon-color: hsl(35, 100%, 55.5%);
   --success-tick-color: hsl(151, 55.0%, 41.5%);
   --code-comment-color: var(--mauve9);
-  --code-highlight-color: hsl(260deg 20.58% 32.17% / 30%);
-  --code-insert-bg-color: hsla(156, 99.9%, 62.0%, 0.187);
-  --code-delete-bg-color: hsla(358, 99.6%, 60.3%, 0.322);
+  --code-highlight-bg-color: hsl(261.43deg 13.54% 21.91% / 61%);
+  --code-highlight-border-color: var(--violet8);
+  --code-insert-bg-color: hsla(158, 98.6%, 59.7%, 0.105);
+  --code-insert-border-color: hsla(152, 99.9%, 66.5%, 0.661);
+  --code-delete-bg-color: hsla(359, 99.1%, 61.1%, 0.130);
+  --code-delete-border-color: hsla(358, 100%, 67.5%, 0.942);
   --sidebar-backdrop-color: hsl(0deg 0% 0% / 20%);
   --errors-bg-color: hsl(360, 97.9%, 94.8%);
   --errors-border-color: hsl(360, 81.7%, 87.8%);
