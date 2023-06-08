@@ -68,6 +68,13 @@ export const docsHook: PipelineHook = (node, pipeline) => {
     return pipeline.component('docs::elements/pre', { node })
   }
 
+  /**
+   * Processing include tag
+   */
+  if (node.tagName === 'include') {
+    return pipeline.component('elements/include_partial', { node })
+  }
+
   if (!node.properties || !Array.isArray(node.properties.className)) {
     return
   }
