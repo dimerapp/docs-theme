@@ -29,6 +29,26 @@
   --search-max-width: 780px;
   --popup-menu-width: 240px;
 
+  --sponsor-container-width: 66px;
+  --sponsor-container-height: 66px;
+  --sponsor-margin-bottom: 8px;
+  --sponsor-margin-right: 8px;
+
+  --gold-sponsor-container-width: 102px;
+  --gold-sponsor-container-height: 102px;
+  --gold-sponsor-margin-bottom: 24px;
+  --gold-sponsor-margin-right: 12px;
+
+  --silver-sponsor-container-width: 84px;
+  --silver-sponsor-container-height: 84px;
+  --silver-sponsor-margin-bottom: 12px;
+  --silver-sponsor-margin-right: 10px;
+
+  --past-sponsor-container-width: 48px;
+  --past-sponsor-container-height: 48px;
+  --past-sponsor-margin-bottom: 6px;
+  --past-sponsor-margin-right: 6px;
+
   --prose-font-size: 15px;
   --prose-line-height: 25px;
 

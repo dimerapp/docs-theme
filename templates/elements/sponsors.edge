@@ -1,0 +1,20 @@
+<div class="sponsors_container">
+  <h3> {{ title }} </h3>
+  <div class="sponsors_list">
+    @each(sponsor in sponsors)
+      @if(sponsor.privacyLevel === 'PUBLIC' && $props.finder(sponsor))
+        <a
+          href="{{ `https://github.com/${sponsor.sponsor.login || sponsor.sponsor.name}` }}"
+          class="sponsor_item sponsor_{{ tier }}"
+          target="_blank"
+          rel="noopener"
+          title="{{ sponsor.sponsor.name || sponsor.sponsor.login }}">
+            <img
+              src="{{ sponsor.sponsor.avatarUrl }}"
+              alt="{{ sponsor.sponsor.name || sponsor.sponsor.login }}"
+            >
+        </a>
+      @end
+    @end
+  </div>
+</div>
