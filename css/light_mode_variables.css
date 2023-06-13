@@ -74,7 +74,8 @@
   --copy-code-bg-color: hsl(260deg 11.09% 10.15%);
   --copy-code-border-color: hsl(260deg 4.2% 24.25%);
   --note-icon-color: var(--violet10);
-  --warning-icon-color: hsl(35, 100%, 55.5%);
+  --warning-icon-color: hsl(24, 94.0%, 50.0%);
+  --tip-icon-color: hsl(152, 57.5%, 37.6%);
   --success-tick-color: hsl(151, 55.0%, 41.5%);
   --code-comment-color: var(--mauve9);
   --code-highlight-bg-color: hsl(261.43deg 13.54% 21.91% / 61%);

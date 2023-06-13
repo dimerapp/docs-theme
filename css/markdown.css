@@ -417,6 +417,10 @@
   color: var(--warning-icon-color);
 }
 
+.markdown .alert-tip svg {
+  color: var(--tip-icon-color);
+}
+
 .markdown .alert_contents {
   min-height: 28px;
   display: flex;
