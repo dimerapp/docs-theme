@@ -375,7 +375,7 @@
   vertical-align: top;
 }
 
-.markdown table tr td code {
+.markdown table tr td :not(pre) > code {
   font-size: var(--prose-table-font-size);
   white-space: nowrap;
 }
