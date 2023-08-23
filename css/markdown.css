@@ -266,9 +266,6 @@
   display: flex;
 }
 
-.markdown pre code {
-}
-
 .markdown pre .line {
   position: relative;
   width: 100%;
