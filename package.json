@@ -68,7 +68,7 @@
   },
   "peerDependencies": {
     "@dimerapp/edge": "^4.0.0",
-    "edge.js": "^5.5.1"
+    "edge.js": "^6.0.0-10"
   },
   "eslintConfig": {
     "extends": [
