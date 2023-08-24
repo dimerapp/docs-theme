@@ -7,8 +7,7 @@
  * file that was distributed with this source code.
  */
 
-import { fileURLToPath } from 'node:url'
-import type { EdgeContract } from 'edge.js'
+import type { Edge } from 'edge.js'
 import type { PipelineHook } from '@dimerapp/edge/types'
 
 /**
@@ -108,6 +107,6 @@ export const docsHook: PipelineHook = (node, pipeline) => {
 /**
  * Edge plugin to mount the docs theme templates
  */
-export function docsTheme(edge: EdgeContract) {
-  edge.mount('docs', fileURLToPath(new URL('./templates', import.meta.url)))
+export function docsTheme(edge: Edge) {
+  edge.mount('docs', new URL('./templates', import.meta.url))
 }
