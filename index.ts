@@ -16,6 +16,10 @@ import type { PipelineHook } from '@dimerapp/edge/types'
  * markdown nodes
  */
 export const docsHook: PipelineHook = (node, pipeline) => {
+  if (node.tagName === 'disclosure') {
+    return pipeline.component('docs::elements/disclosure', { node })
+  }
+
   /**
    * Wrapping headings text inside a span
    */
