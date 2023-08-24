@@ -1,4 +1,4 @@
-@let('tabs' = JSON.parse(node.properties.dataTabs))
+@let(tabs = JSON.parse(node.properties.dataTabs))
 
 <div x-data="codegroupTabsWrapper">
   @component('ui::components/tabs/group', { class: 'codegroup' })
