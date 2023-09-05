@@ -1,0 +1,27 @@
+<div class="sponsored_container">
+  <h3> Platinum sponsors </h3>
+  @each(sponsor in sponsors)
+    <div class="sponsor">
+
+      <a class="sponsor_logo" href="{{ sponsor.link }}">
+        @if(sponsor.logo_dark)
+          <span class="sponsor_logo_dark">
+            <img src="{{ sponsor.logo_dark }}" style="{{ sponsor.logo_styles }}" />
+          </span>
+          <span class="sponsor_logo_light">
+            <img src="{{ sponsor.logo }}" style="{{ sponsor.logo_styles }}" />
+          </span>
+        @else
+          <img src="{{ sponsor.logo }}" style="{{ sponsor.logo_styles }}" />
+        @end
+      </a>
+
+    </div>
+  @end
+
+  <div class="sponsor">
+    <a class="sponsor_logo" href="https://adonisjs.com/support/advertise">
+      Your logo
+    </a>
+  </div>
+</div>

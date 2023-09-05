@@ -1,10 +1,17 @@
-<div class="toc_wrapper">
-  <div class="toc">
-    <div class="toc_container">
-      <h3>On this page</h3>
-      <nav x-data="trackScroll">
-        {{{ await $slots.main() }}}
-      </nav>
+<div class="aside_wrapper">
+  <div class="aside">
+    <div class="aside_container">
+
+      <div class="toc_container">
+        <h3>On this page</h3>
+        <nav x-data="trackScroll">
+          {{{ await $slots.main() }}}
+        </nav>
+      </div>
+
+      @if(sponsors && sponsors.length)
+        @!component('docs::elements/sponsor_advertisements', { sponsors })
+      @end
     </div>
   </div>
 </div>
