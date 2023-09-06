@@ -99,11 +99,6 @@ export function initBaseComponents(Alpine) {
       animateHighlighter(activeTab, highlighter) {
         highlighter.style.left = `${activeTab.offsetLeft}px`
         highlighter.style.width = `${activeTab.clientWidth}px`
-        activeTab.scrollIntoView({
-          behavior: 'smooth',
-          block: 'nearest',
-          inline: 'center',
-        })
       },
 
       init() {
