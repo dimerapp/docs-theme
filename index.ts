@@ -78,6 +78,14 @@ export const docsHook: PipelineHook = (node, pipeline) => {
     return pipeline.component('docs::elements/includes_partial', { node })
   }
 
+  /**
+   * Processing component tag. Assuming the template property
+   * will be provided all the times
+   */
+  if (node.tagName === 'component') {
+    return pipeline.component(node.properties!.template as string, { node })
+  }
+
   if (!node.properties || !Array.isArray(node.properties.className)) {
     return
   }
