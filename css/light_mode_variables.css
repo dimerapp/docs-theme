@@ -38,6 +38,7 @@
   --violet11: hsl(250, 43.0%, 48.0%);
   --violet12: hsl(254, 60.0%, 18.5%);
 
+  --progress-bar-color: var(--violet11);
   --surface-bg-color: #fff;
   --header-bg-color: var(--mauve1);
   --local-nav-bg-color: var(--mauve1);

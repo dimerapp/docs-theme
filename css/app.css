@@ -3,7 +3,7 @@ html {
 }
 
 up-progress-bar {
-  background-color: var(--violet11);
+  background-color: var(--progress-bar-color);
 }
 
 body {

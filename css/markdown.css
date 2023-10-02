@@ -377,6 +377,19 @@
   white-space: nowrap;
 }
 
+.table_container + blockquote {
+  border: 1px solid var(--prose-table-border-color);
+  margin-top: -25px;
+  text-align: center;
+  font-size: var(--prose-table-font-size);
+  padding: 2px 0;
+  background-color: var(--mauve4);
+}
+
+.table_container + blockquote *:last-child {
+  margin: 0;
+}
+
 .markdown .alert {
   background: var(--mauve4);
   border-radius: var(--rounded-md);

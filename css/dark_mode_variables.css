@@ -38,6 +38,7 @@ html.dark {
   --violet11: hsl(250, 95.0%, 76.8%);
   --violet12: hsl(252, 87.0%, 96.4%);
 
+  --progress-bar-color: var(--violet11);
   --surface-bg-color: var(--mauve1);
   --header-bg-color: var(--mauve1);
   --local-nav-bg-color: var(--mauve1);
