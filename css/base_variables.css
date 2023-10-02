@@ -107,6 +107,10 @@
   --prose-dl-line-height: 22px;
   --prose-dl-spacing: 22px;
 
+  --prose-feature-highlight-font-size: 14px;
+  --prose-feature-highlight-line-height: 22px;
+  --prose-feature-highlight-margin-y: 50px;
+
   --header-anchor-font-size: 14px;
   --header-anchor-font-family: var(--font-display);
 

@@ -54,6 +54,7 @@
   --popup-menu-separator-color: var(--mauve8);
   --prose-text-color: var(--base-text-color);
   --prose-headings-color: var(--base-text-color);
+  --prose-feature-highlight-list-color: var(--mauve1);
   --pre-background-color: var(--mauve12);
   --code-text-color: var(--violet11);
   --code-bg-color: var(--mauve5);

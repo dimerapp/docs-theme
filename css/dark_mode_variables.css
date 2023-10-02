@@ -54,6 +54,7 @@ html.dark {
   --popup-menu-separator-color: var(--mauve8);
   --prose-text-color: hsl(253deg 4.47% 72%);
   --prose-headings-color: var(--base-text-color);
+  --prose-feature-highlight-list-color: var(--mauve12);
   --pre-background-color: var(--mauve4);
   --code-text-color: var(--violet11);
   --code-bg-color: var(--mauve5);
