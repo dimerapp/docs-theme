@@ -48,6 +48,7 @@
     "@commitlint/cli": "^17.7.2",
     "@commitlint/config-conventional": "^17.6.6",
     "@dimerapp/edge": "^4.0.0",
+    "@radix-ui/colors": "^3.0.0",
     "@swc/core": "1.3.82",
     "@types/node": "^20.8.2",
     "alpinejs": "^3.13.1",
@@ -68,7 +69,8 @@
   },
   "peerDependencies": {
     "@dimerapp/edge": "^4.0.0",
-    "edge.js": "^6.0.0-10"
+    "edge.js": "^6.0.0-10",
+    "@radix-ui/colors": "^3.0.0"
   },
   "eslintConfig": {
     "extends": [

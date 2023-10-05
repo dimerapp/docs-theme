@@ -10,7 +10,7 @@
 
 .sponsors_list .sponsor_item {
   border-radius: 4px;
-  border: 1px solid var(--mauve8);
+  border: 1px solid var(--sponsor-item-border-color);
   width: var(--sponsor-container-width);
   height: var(--sponsor-container-height);
   margin-bottom: var(--sponsor-margin-bottom);

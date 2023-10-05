@@ -1,7 +1,7 @@
 .markdown .feature_highlight {
   background-color: var(--pre-background-color);
-  border: 1px solid var(--mauve12);
-  margin: var(--prose-feature-highlight-margin-y) 0;
+  border: 1px solid var(--feature-highlight-bg-color);
+  margin: var(--feature-highlight-margin-y) 0;
   width: 90%;
   border-radius: var(--rounded-md);
   position: relative;
@@ -23,8 +23,8 @@
 }
 
 .markdown .feature_highlight_bullet_points {
-  color: var(--prose-feature-highlight-list-color);
-  font-size: var(--prose-feature-highlight-font-size);
+  color: var(--feature-highlight-list-color);
+  font-size: var(--feature-highlight-font-size);
 }
 .markdown .feature_highlight_bullet_points ul {
   list-style: none;
@@ -44,8 +44,8 @@
 
 .markdown .feature_highlight_description {
   padding: 17px 20px 10px 20px;
-  font-size: var(--prose-feature-highlight-font-size);
-  line-height: var(--prose-feature-highlight-line-height);
+  font-size: var(--feature-highlight-font-size);
+  line-height: var(--feature-highlight-line-height);
   background-color: var(--surface-bg-color);
   border-radius: 0 0 calc(var(--rounded-md) - 1px) calc(var(--rounded-md) - 1px);
   display: flex;

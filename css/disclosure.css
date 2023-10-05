@@ -1,10 +1,10 @@
 .disclosure {
-  border: 1px solid var(--mauve6);
+  border: 1px solid var(--disclosure-wrapper-border-color);
   margin: var(--prose-elements-margin) 0;
   font-size: var(--prose-dl-font-size);
   line-height: var(--prose-dl-line-height);
   border-radius: var(--rounded-md);
-  background-color: var(--mauve4);
+  background-color: var(--disclosure-wrapper-bg-color);
 
   --prose-p-margin-bottom: 12px;
   --prose-h4-margin-bottom: 2px;
@@ -34,8 +34,8 @@
 
 .disclosure_panel {
   padding: 0 25px var(--prose-elements-margin) 25px;
-  border-top: 1px solid var(--mauve6);
-  background-color: var(--mauve1);
+  border-top: 1px solid var(--disclosure-panel-border-color);
+  background-color: var(--disclosure-panel-bg-color);
   border-radius: 0 0 7px 7px;
 }
 
