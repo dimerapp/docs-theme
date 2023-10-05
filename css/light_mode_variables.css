@@ -25,10 +25,11 @@
   --sidebar-active-link-bg-color: var(--violet-5);
   --sidebar-loading-link-bg-color: hsl(252deg 85.1% 93% / 41%);
   --sidebar-active-link-text-color: var(--violet-11);
+  --aside-link-text-color: var(--mauve-11);
   --aside-active-link-text-color: var(--violet-11);
-  --prose-table-border-color: var(--mauve-6);
-  --pre-title-border-color: rgba(253,252,253,.14);
-  --pre-title-text-color: var(--mauve-9);
+  --prose-table-border-color: var(--mauve-a6);
+  --pre-title-border-color: var(--mauve-11);
+  --pre-title-text-color: var(--mauve-8);
   --pre-tabs-text-color: var(--mauve-9);
   --pre-tabs-active-text-color: var(--mauve-1);
   --pre-tabs-active-border-color: var(--violet-8);
@@ -36,7 +37,7 @@
   --copy-code-bg-color: hsl(260deg 11.09% 10.15%);
   --copy-code-border-color: hsl(260deg 4.2% 24.25%);
   --note-icon-color: var(--violet-10);
-  --warning-icon-color: hsl(24, 94.0%, 50.0%);
+  --warning-icon-color: var(--orange-a11);
   --tip-icon-color: hsl(152, 57.5%, 37.6%);
   --success-tick-color: hsl(151, 55.0%, 41.5%);
   --code-comment-color: var(--mauve-9);
@@ -54,21 +55,29 @@
   --caption-error-bg-color: hsl(358, 75.0%, 59.0%);
   --caption-success-border-color: hsl(151, 55.0%, 41.5%);
   --caption-success-bg-color: hsl(151, 55.0%, 41.5%);
-  --caption-info-border-color: hsl(226, 70.0%, 55.5%);
-  --caption-info-bg-color: hsl(226, 70.0%, 55.5%);
+  --caption-info-border-color: var(--iris-a11);
+  --caption-info-bg-color: var(--iris-a10);
 
   --disclosure-wrapper-border-color: var(--mauve-6);
   --disclosure-wrapper-bg-color: var(--mauve-4);
   --disclosure-panel-border-color: var(--mauve-6);
   --disclosure-panel-bg-color: var(--mauve-1);
 
-  --feature-highlight-bg-color: var(--mauve-12);
-  --feature-highlight-list-color: var(--mauve-12);
+  --feature-highlight-border-color: var(--mauve-a12);
+  --feature-highlight-list-color: var(--mauve-1);
 
   --sponsor-item-border-color: var(--mauve-dark-8);
 
-  --prose-h2-border-color: var(--mauve-7);
-  --prose-blockquote-bg-color: var(--mauve-4);
-  --prose-alert-bg-color: var(--mauve-4);
-  --prose-alert-border-color: var(--mauve-6);
+  --prose-h2-border-color: var(--mauve-4);
+  --prose-blockquote-bg-color: var(--mauve-a3);
+  --prose-alert-bg-color: var(--mauve-a3);
+  --prose-alert-border-color: var(--mauve-a4);
+
+  --aside-sponsor-bg-color: var(--mauve-4);
+  --aside-sponsor-text-color: var(--mauve-11);
+  --aside-sponsor-hover-text-color: var(--mauve-12);
+
+  --footer-text-color: var(--mauve-11);
+  --footer-hover-text-color: var(--mauve-12);
+  --footer-border-color: var(--mauve-6);
 }

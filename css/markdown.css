@@ -36,7 +36,7 @@
 
   margin-top: var(--prose-section-margin-top);
   padding-top: var(--prose-section-padding-top);
-  border-top: 1px solid var(--prose-section-border-color);
+  border-top: 1px solid var(--prose-h2-border-color);
   position: relative;
 
   display: flex;
@@ -118,6 +118,10 @@
 .markdown a {
   color: var(--base-text-color);
   text-decoration: underline;
+}
+
+.markdown a:has(> code) {
+  color: var(--code-text-color);
 }
 
 .markdown strong {
@@ -466,7 +470,7 @@
   position: absolute;
   top: 0;
   bottom: 0;
-  top: 22px;
+  top: 25px;
   left: 11px;
   width: 1px;
 }
