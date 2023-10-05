@@ -66,7 +66,7 @@
   --feature-highlight-border-color: var(--mauve-a12);
   --feature-highlight-list-color: var(--mauve-1);
 
-  --sponsor-item-border-color: var(--mauve-dark-8);
+  --sponsor-item-border-color: var(--mauve-8);
 
   --prose-h2-border-color: var(--mauve-4);
   --prose-blockquote-bg-color: var(--mauve-a3);
@@ -80,4 +80,7 @@
   --footer-text-color: var(--mauve-11);
   --footer-hover-text-color: var(--mauve-12);
   --footer-border-color: var(--mauve-6);
+
+  --prose-dl-border-color: var(--mauve-4);
+  --prose-hr-border-color: var(--mauve-4);
 }

@@ -80,4 +80,7 @@ html.dark {
   --footer-text-color: var(--mauve-11);
   --footer-hover-text-color: var(--mauve-12);
   --footer-border-color: var(--mauve-4);
+
+  --prose-dl-border-color: var(--mauve-4);
+  --prose-hr-border-color: var(--mauve-4);
 }

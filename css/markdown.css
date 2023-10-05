@@ -152,7 +152,7 @@
 }
 
 .markdown hr {
-  background: var(--prose-section-border-color);
+  background: var(--prose-hr-border-color);
   border: none;
   height: 1px;
   margin-top: var(--prose-section-margin-top);
@@ -539,7 +539,7 @@
 .markdown dd {
   margin-bottom: var(--prose-dl-spacing);
   padding-bottom: var(--prose-dl-spacing);
-  border-bottom: 1px solid var(--prose-section-border-color);
+  border-bottom: 1px solid var(--prose-dl-border-color);
 }
 
 .markdown dd *:last-child {
