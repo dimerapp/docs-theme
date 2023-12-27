@@ -240,7 +240,7 @@ html.light .theme_switcher_light_mode {
 .popup_menu .header_nav_menu_theme_switcher select {
   border-radius: var(--rounded-sm);
   padding: 5px 10px;
-  background: var(--mauve2);
+  background: var(--neutral-gray-2);
 }
 
 .docs_local_nav_wrapper {
@@ -267,7 +267,7 @@ html.light .theme_switcher_light_mode {
 }
 
 .docs_local_nav_container button {
-  color: var(--mauve11);
+  color: var(--neutral-gray-11);
 }
 
 .docs_local_nav_container p {

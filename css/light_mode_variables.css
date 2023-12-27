@@ -1,48 +1,108 @@
 :root {
-  --progress-bar-color: var(--violet-11);
+  /**
+   * Neutral grays are used for surface
+   * and text
+   */
+  --neutral-gray-1: var(--mauve-1);
+  --neutral-gray-2: var(--mauve-2);
+  --neutral-gray-3: var(--mauve-3);
+  --neutral-gray-4: var(--mauve-4);
+  --neutral-gray-5: var(--mauve-5);
+  --neutral-gray-6: var(--mauve-6);
+  --neutral-gray-7: var(--mauve-7);
+  --neutral-gray-8: var(--mauve-8);
+  --neutral-gray-9: var(--mauve-9);
+  --neutral-gray-10: var(--mauve-10);
+  --neutral-gray-11: var(--mauve-11);
+  --neutral-gray-12: var(--mauve-12);
+
+  --neutral-gray-a1: var(--mauve-a1);
+  --neutral-gray-a2: var(--mauve-a2);
+  --neutral-gray-a3: var(--mauve-a3);
+  --neutral-gray-a4: var(--mauve-a4);
+  --neutral-gray-a5: var(--mauve-a5);
+  --neutral-gray-a6: var(--mauve-a6);
+  --neutral-gray-a7: var(--mauve-a7);
+  --neutral-gray-a8: var(--mauve-a8);
+  --neutral-gray-a9: var(--mauve-a9);
+  --neutral-gray-a10: var(--mauve-a10);
+  --neutral-gray-a11: var(--mauve-a11);
+  --neutral-gray-a12: var(--mauve-a12);
+
+  /**
+   * Accent color is the primary tint to use
+   * for colorful elements
+   */
+  --accent-1: var(--violet-1);
+  --accent-2: var(--violet-2);
+  --accent-3: var(--violet-3);
+  --accent-4: var(--violet-4);
+  --accent-5: var(--violet-5);
+  --accent-6: var(--violet-6);
+  --accent-7: var(--violet-7);
+  --accent-8: var(--violet-8);
+  --accent-9: var(--violet-9);
+  --accent-10: var(--violet-10);
+  --accent-11: var(--violet-11);
+  --accent-12: var(--violet-12);
+
+  --accent-a1: var(--violet-a1);
+  --accent-a2: var(--violet-a2);
+  --accent-a3: var(--violet-a3);
+  --accent-a4: var(--violet-a4);
+  --accent-a5: var(--violet-a5);
+  --accent-a6: var(--violet-a6);
+  --accent-a7: var(--violet-a7);
+  --accent-a8: var(--violet-a8);
+  --accent-a9: var(--violet-a9);
+  --accent-a10: var(--violet-a10);
+  --accent-a11: var(--violet-a11);
+  --accent-a12: var(--violet-a12);
+
+  --progress-bar-color: var(--accent-11);
   --surface-bg-color: #fff;
-  --header-bg-color: var(--mauve-1);
-  --local-nav-bg-color: var(--mauve-1);
-  --header-border-color: var(--mauve-6);
-  --sidebar-border-color: var(--mauve-6);
-  --aside-border-color: var(--mauve-6);
-  --base-text-color: var(--mauve-12);
-  --nav-items-link-color: var(--mauve-11);
-  --nav-items-hover-link-color: var(--mauve-12);
-  --nav-item-separator-color: var(--mauve-7);
-  --popup-menu-bg-color: var(--mauve-4);
-  --popup-menu-link-color: var(--mauve-12);
-  --popup-menu-separator-color: var(--mauve-8);
+  --header-bg-color: var(--neutral-gray-1);
+  --local-nav-bg-color: var(--neutral-gray-1);
+  --header-border-color: var(--neutral-gray-6);
+  --sidebar-border-color: var(--neutral-gray-6);
+  --aside-border-color: var(--neutral-gray-6);
+  --base-text-color: var(--neutral-gray-12);
+  --nav-items-link-color: var(--neutral-gray-11);
+  --nav-items-hover-link-color: var(--neutral-gray-12);
+  --nav-item-separator-color: var(--neutral-gray-7);
+  --popup-menu-bg-color: var(--neutral-gray-4);
+  --popup-menu-link-color: var(--neutral-gray-12);
+  --popup-menu-separator-color: var(--neutral-gray-8);
   --prose-text-color: var(--base-text-color);
   --prose-headings-color: var(--base-text-color);
-  --pre-background-color: var(--mauve-12);
-  --code-text-color: var(--violet-11);
-  --code-bg-color: var(--mauve-5);
+  --pre-background-color: var(--neutral-gray-12);
+  --code-text-color: var(--accent-11);
+  --code-bg-color: var(--neutral-gray-5);
   --sidebar-link-text-color: var(--base-text-color);
   --sidebar-overlay-bg-color: rgba(0, 0, 0, .6);
-  --sidebar-hover-link-bg-color: var(--mauve-a5);
+  --sidebar-hover-link-bg-color: var(--neutral-gray-a5);
   --sidebar-hover-link-text-color: var(--base-text-color);
-  --sidebar-active-link-bg-color: var(--violet-5);
+  --sidebar-active-link-bg-color: var(--accent-5);
   --sidebar-loading-link-bg-color: hsl(252deg 85.1% 93% / 41%);
-  --sidebar-active-link-text-color: var(--violet-11);
-  --aside-link-text-color: var(--mauve-11);
-  --aside-active-link-text-color: var(--violet-11);
-  --prose-table-border-color: var(--mauve-a6);
-  --pre-title-border-color: var(--mauve-11);
-  --pre-title-text-color: var(--mauve-8);
-  --pre-tabs-text-color: var(--mauve-9);
-  --pre-tabs-active-text-color: var(--mauve-1);
-  --pre-tabs-active-border-color: var(--violet-8);
+  --sidebar-active-link-text-color: var(--accent-11);
+  --aside-link-text-color: var(--neutral-gray-11);
+  --aside-active-link-text-color: var(--accent-11);
+  --prose-table-border-color: var(--neutral-gray-a6);
+  --pre-title-border-color: var(--neutral-gray-11);
+  --pre-title-text-color: var(--neutral-gray-8);
+  --pre-tabs-text-color: var(--neutral-gray-9);
+  --pre-tabs-active-text-color: var(--neutral-gray-1);
+  --pre-tabs-active-border-color: var(--accent-8);
   --copy-code-text-color: hsl(0deg 0% 41.59%);
   --copy-code-bg-color: hsl(260deg 11.09% 10.15%);
   --copy-code-border-color: hsl(260deg 4.2% 24.25%);
-  --note-icon-color: var(--violet-10);
+  --note-icon-color: var(--accent-10);
   --warning-icon-color: var(--orange-a11);
   --tip-icon-color: hsl(152, 57.5%, 37.6%);
   --success-tick-color: hsl(151, 55.0%, 41.5%);
-  --code-comment-color: var(--mauve-9);
+  --code-comment-color: var(--neutral-gray-9);
   --code-highlight-bg-color: hsl(261.43deg 13.54% 21.91% / 61%);
-  --code-highlight-border-color: var(--violet-8);
+  --code-highlight-border-color: var(--accent-8);
   --code-insert-bg-color: hsla(158, 98.6%, 59.7%, 0.105);
   --code-insert-border-color: hsla(152, 99.9%, 66.5%, 0.661);
   --code-delete-bg-color: hsla(359, 99.1%, 61.1%, 0.130);
@@ -58,29 +118,30 @@
   --caption-info-border-color: var(--iris-a11);
   --caption-info-bg-color: var(--iris-a10);
 
-  --disclosure-wrapper-border-color: var(--mauve-6);
-  --disclosure-wrapper-bg-color: var(--mauve-4);
-  --disclosure-panel-border-color: var(--mauve-6);
-  --disclosure-panel-bg-color: var(--mauve-1);
+  --disclosure-wrapper-border-color: var(--neutral-gray-6);
+  --disclosure-wrapper-bg-color: var(--neutral-gray-4);
+  --disclosure-panel-border-color: var(--neutral-gray-6);
+  --disclosure-panel-bg-color: var(--neutral-gray-1);
 
-  --feature-highlight-border-color: var(--mauve-a12);
-  --feature-highlight-list-color: var(--mauve-1);
+  --feature-highlight-border-color: var(--neutral-gray-a12);
+  --feature-highlight-list-color: var(--neutral-gray-1);
 
-  --sponsor-item-border-color: var(--mauve-8);
+  --sponsor-item-border-color: var(--neutral-gray-8);
 
-  --prose-h2-border-color: var(--mauve-4);
-  --prose-blockquote-bg-color: var(--mauve-a3);
-  --prose-alert-bg-color: var(--mauve-a3);
-  --prose-alert-border-color: var(--mauve-a4);
+  --prose-h2-border-color: var(--neutral-gray-4);
+  --prose-blockquote-bg-color: var(--neutral-gray-a3);
+  --prose-alert-bg-color: var(--neutral-gray-a3);
+  --prose-alert-border-color: var(--neutral-gray-a4);
 
-  --aside-sponsor-bg-color: var(--mauve-4);
-  --aside-sponsor-text-color: var(--mauve-11);
-  --aside-sponsor-hover-text-color: var(--mauve-12);
+  --aside-sponsor-bg-color: var(--neutral-gray-4);
+  --aside-sponsor-text-color: var(--neutral-gray-11);
+  --aside-sponsor-hover-text-color: var(--neutral-gray-12);
 
-  --footer-text-color: var(--mauve-11);
-  --footer-hover-text-color: var(--mauve-12);
-  --footer-border-color: var(--mauve-6);
+  --footer-text-color: var(--neutral-gray-11);
+  --footer-hover-text-color: var(--neutral-gray-12);
+  --footer-border-color: var(--neutral-gray-6);
 
-  --prose-dl-border-color: var(--mauve-4);
-  --prose-hr-border-color: var(--mauve-4);
+  --prose-dl-border-color: var(--neutral-gray-4);
+  --prose-hr-border-color: var(--neutral-gray-4);
+  --prose-section-border-color: var(--neutral-gray-4);
 }
