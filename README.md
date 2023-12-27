@@ -2,18 +2,19 @@
 
 <br />
 
-[![npm-image]][npm-url] ![][typescript-image] [![license-image]][license-url] [![snyk-image]][snyk-url]
+[![npm-image]][npm-url] ![][typescript-image] [![license-image]][license-url]
 
 The docs theme provides ready to use Edge templates, CSS and frontend JavaScript to create a documentation layout. This package must be used with [@dimerapp/content](https://github.com/dimerapp/content) package.
 
 ## Usage
+
 Install the package from npm packages registry.
 
 ```sh
 npm i @dimerapp/docs-theme
 ```
 
-Register the `docsTheme` with the edge template engine. The `docsTheme` plugin registers a set of templates under the `docs` namespace. 
+Register the `docsTheme` with the edge template engine. The `docsTheme` plugin registers a set of templates under the `docs` namespace.
 
 Some of the templates relies on the `edge-uikit`. So make sure to also and configure the `edge-uikit`.
 
@@ -64,7 +65,8 @@ Once done, you use the following components to render the docs header, sidebar, 
 ```
 
 ## Including styles and scripts
-You may import the styles and scripts as follows. 
+
+You may import the styles and scripts as follows.
 
 ```css
 @import '@dimerapp/docs-theme/styles';
@@ -76,7 +78,7 @@ import docsearch from '@docsearch/js'
 import {
   initZoomComponent,
   initBaseComponents,
-  initSearchComponent
+  initSearchComponent,
 } from '@dimerapp/docs-theme/scripts'
 
 Alpine.plugin(initBaseComponents)
@@ -85,12 +87,7 @@ Alpine.plugin(initZoomComponent(mediumZoom))
 ```
 
 [npm-image]: https://img.shields.io/npm/v/@dimerapp/docs-theme/latest.svg?style=for-the-badge&logo=npm
-[npm-url]: https://www.npmjs.com/package/@dimerapp/docs-theme/v/latest "npm"
-
+[npm-url]: https://www.npmjs.com/package/@dimerapp/docs-theme/v/latest 'npm'
 [typescript-image]: https://img.shields.io/badge/Typescript-294E80.svg?style=for-the-badge&logo=typescript
-
 [license-url]: LICENSE.md
 [license-image]: https://img.shields.io/github/license/dimerapp/docs-theme?style=for-the-badge
-
-[snyk-image]: https://img.shields.io/snyk/vulnerabilities/github/dimerapp/docs-theme?label=Snyk%20Vulnerabilities&style=for-the-badge
-[snyk-url]: https://snyk.io/test/github/dimerapp/docs-theme?targetFile=package.json "snyk"
