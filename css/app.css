@@ -456,13 +456,15 @@ html.light .theme_switcher_light_mode {
 }
 
 .aside_container nav li a {
-  display: inline-block;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  display: block;
+  margin: 10px 0;
   color: var(--aside-link-text-color);
   text-decoration: none;
   font-size: 13px;
   line-height: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   transition: color .1s ease-in-out;
 }
 
