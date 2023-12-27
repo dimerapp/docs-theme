@@ -59,7 +59,7 @@ html.dark {
    --accent-a11: var(--violet-a11);
    --accent-a12: var(--violet-a12);
 
-  --progress-bar-color: var(--accent-11);
+  --progress-bar-color: var(--accent-a11);
   --surface-bg-color: var(--neutral-gray-1);
   --header-bg-color: var(--neutral-gray-1);
   --local-nav-bg-color: var(--neutral-gray-1);
@@ -76,14 +76,14 @@ html.dark {
   --prose-text-color: var(--neutral-gray-11);
   --prose-headings-color: var(--base-text-color);
   --pre-background-color: var(--neutral-gray-3);
-  --code-text-color: var(--accent-11);
-  --code-bg-color: var(--neutral-gray-5);
+  --code-text-color: var(--accent-a11);
+  --code-bg-color: var(--accent-a3);
   --sidebar-overlay-bg-color: rgba(0, 0, 0, .6);
   --sidebar-link-text-color: var(--neutral-gray-11);
   --sidebar-hover-link-bg-color: var(--neutral-gray-a5);
   --sidebar-hover-link-text-color: var(--neutral-gray-12);
-  --sidebar-active-link-bg-color: var(--accent-5);
-  --sidebar-loading-link-bg-color: hsl(252deg 42.2% 26.2% / 32%);
+  --sidebar-active-link-bg-color: var(--accent-a5);
+  --sidebar-loading-link-bg-color: var(--accent-a7);
   --sidebar-active-link-text-color: var(--accent-12);
   --aside-link-text-color: var(--neutral-gray-11);
   --aside-active-link-text-color: var(--accent-11);
@@ -92,17 +92,17 @@ html.dark {
   --pre-title-text-color: var(--neutral-gray-11);
   --pre-tabs-text-color: var(--neutral-gray-11);
   --pre-tabs-active-text-color: var(--neutral-gray-12);
-  --pre-tabs-active-border-color: var(--accent-10);
+  --pre-tabs-active-border-color: var(--accent-a10);
   --copy-code-text-color: hsl(0deg 0.84% 36.56%);
   --copy-code-bg-color: hsl(260deg 2.99% 14.21%);
   --copy-code-border-color: hsl(260deg 1.68% 21.01%);
-  --note-icon-color: var(--accent-10);
+  --note-icon-color: var(--accent-a10);
   --warning-icon-color: var(--orange-a11);
   --tip-icon-color: hsl(151, 55.0%, 41.5%);
   --success-tick-color: hsl(151, 55.0%, 41.5%);
   --code-comment-color: var(--neutral-gray-11);
   --code-highlight-bg-color: hsl(0deg 0% 0% / 20%);
-  --code-highlight-border-color: var(--accent-8);
+  --code-highlight-border-color: var(--accent-a8);
   --code-insert-bg-color: hsla(158, 98.6%, 59.7%, 0.105);
   --code-insert-border-color: hsla(152, 99.9%, 66.5%, 0.661);
   --code-delete-bg-color: hsla(359, 99.1%, 61.1%, 0.130);

@@ -59,7 +59,7 @@
   --accent-a11: var(--violet-a11);
   --accent-a12: var(--violet-a12);
 
-  --progress-bar-color: var(--accent-11);
+  --progress-bar-color: var(--accent-a11);
   --surface-bg-color: #fff;
   --header-bg-color: var(--neutral-gray-1);
   --local-nav-bg-color: var(--neutral-gray-1);
@@ -76,14 +76,14 @@
   --prose-text-color: var(--base-text-color);
   --prose-headings-color: var(--base-text-color);
   --pre-background-color: var(--neutral-gray-12);
-  --code-text-color: var(--accent-11);
-  --code-bg-color: var(--neutral-gray-5);
+  --code-text-color: var(--accent-a11);
+  --code-bg-color: var(--accent-a3);
   --sidebar-link-text-color: var(--base-text-color);
   --sidebar-overlay-bg-color: rgba(0, 0, 0, .6);
   --sidebar-hover-link-bg-color: var(--neutral-gray-a5);
   --sidebar-hover-link-text-color: var(--base-text-color);
-  --sidebar-active-link-bg-color: var(--accent-5);
-  --sidebar-loading-link-bg-color: hsl(252deg 85.1% 93% / 41%);
+  --sidebar-active-link-bg-color: var(--accent-a5);
+  --sidebar-loading-link-bg-color: var(--accent-a3);
   --sidebar-active-link-text-color: var(--accent-11);
   --aside-link-text-color: var(--neutral-gray-11);
   --aside-active-link-text-color: var(--accent-11);
@@ -92,17 +92,17 @@
   --pre-title-text-color: var(--neutral-gray-8);
   --pre-tabs-text-color: var(--neutral-gray-9);
   --pre-tabs-active-text-color: var(--neutral-gray-1);
-  --pre-tabs-active-border-color: var(--accent-8);
+  --pre-tabs-active-border-color: var(--accent-a10);
   --copy-code-text-color: hsl(0deg 0% 41.59%);
   --copy-code-bg-color: hsl(260deg 11.09% 10.15%);
   --copy-code-border-color: hsl(260deg 4.2% 24.25%);
-  --note-icon-color: var(--accent-10);
+  --note-icon-color: var(--accent-a10);
   --warning-icon-color: var(--orange-a11);
   --tip-icon-color: hsl(152, 57.5%, 37.6%);
   --success-tick-color: hsl(151, 55.0%, 41.5%);
   --code-comment-color: var(--neutral-gray-9);
   --code-highlight-bg-color: hsl(261.43deg 13.54% 21.91% / 61%);
-  --code-highlight-border-color: var(--accent-8);
+  --code-highlight-border-color: var(--accent-a8);
   --code-insert-bg-color: hsla(158, 98.6%, 59.7%, 0.105);
   --code-insert-border-color: hsla(152, 99.9%, 66.5%, 0.661);
   --code-delete-bg-color: hsla(359, 99.1%, 61.1%, 0.130);
