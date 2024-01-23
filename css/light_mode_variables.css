@@ -101,6 +101,7 @@
   --tip-icon-color: hsl(152, 57.5%, 37.6%);
   --success-tick-color: hsl(151, 55.0%, 41.5%);
   --code-comment-color: var(--neutral-gray-9);
+  --code-comment-green-tint: #648777;
   --code-highlight-bg-color: hsl(261.43deg 13.54% 21.91% / 61%);
   --code-highlight-border-color: var(--accent-9);
   --code-insert-bg-color: hsla(158, 98.6%, 59.7%, 0.105);
