@@ -9,6 +9,9 @@
 .markdown p {
   margin-bottom: var(--prose-p-margin-bottom);
 }
+.markdown p.lede {
+  font-size: 18px;
+}
 
 .markdown h1 a, .markdown h2 a, .markdown h3 a, .markdown h4 a {
   color: var(--prose-headings-color);
@@ -296,6 +299,7 @@
 
 .markdown pre .line.highlight-insert {
   background: var(--code-insert-bg-color);
+  --code-comment-green-tint: #648777;
 }
 .markdown pre .line.highlight-insert:before {
   content: '';
@@ -332,6 +336,10 @@
   margin: var(--prose-elements-margin) 0;
 }
 
+.markdown li > ul {
+  margin-top: 0px;
+}
+
 .markdown figure {
   margin: var(--prose-elements-margin) 0;
 }
@@ -341,12 +349,12 @@
 }
 
 .markdown .table_container {
+  margin: var(--prose-elements-margin) 0;
   max-width: 100%;
-  overflow-x: scroll;
+  overflow-x: auto;
 }
 
 .markdown table {
-  margin: var(--prose-elements-margin) 0;
   text-align: left;
   border-collapse: collapse;
   width: 100%;
@@ -355,6 +363,7 @@
   --code-bg-color: none;
   --code-font-weight: 500;
   --code-text-color: var(--prose-headings-color);
+  --code-font-size: var(--prose-table-font-size);
 }
 
 .markdown table tr th {

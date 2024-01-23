@@ -92,7 +92,7 @@
   --pre-title-text-color: var(--neutral-gray-8);
   --pre-tabs-text-color: var(--neutral-gray-9);
   --pre-tabs-active-text-color: var(--neutral-gray-1);
-  --pre-tabs-active-border-color: var(--accent-a10);
+  --pre-tabs-active-border-color: var(--accent-9);
   --copy-code-text-color: hsl(0deg 0% 41.59%);
   --copy-code-bg-color: hsl(260deg 11.09% 10.15%);
   --copy-code-border-color: hsl(260deg 4.2% 24.25%);
@@ -102,7 +102,7 @@
   --success-tick-color: hsl(151, 55.0%, 41.5%);
   --code-comment-color: var(--neutral-gray-9);
   --code-highlight-bg-color: hsl(261.43deg 13.54% 21.91% / 61%);
-  --code-highlight-border-color: var(--accent-a8);
+  --code-highlight-border-color: var(--accent-9);
   --code-insert-bg-color: hsla(158, 98.6%, 59.7%, 0.105);
   --code-insert-border-color: hsla(152, 99.9%, 66.5%, 0.661);
   --code-delete-bg-color: hsla(359, 99.1%, 61.1%, 0.130);
