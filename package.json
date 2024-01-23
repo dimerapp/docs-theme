@@ -1,6 +1,6 @@
 {
   "name": "@dimerapp/docs-theme",
-  "version": "4.0.1",
+  "version": "4.0.2",
   "description": "Documentation theme built on top of Dimer and used by AdonisJS",
   "type": "module",
   "main": "build/index.js",
