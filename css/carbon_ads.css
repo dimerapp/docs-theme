@@ -1,13 +1,16 @@
 .carbon_ad_wrapper {
-  margin-top: var(--prose-elements-margin);
-  background: var(--neutral-gray-3);
-  padding: 15px;
-  border-radius: var(--rounded-md);
+  padding: var(--surface-spacing);
   text-align: center;
   font-size: 12px;
   font-weight: 500;
   line-height: 1.4;
   color: var(--neutral-gray-11);
+}
+
+.carbon_ad_wrapper #carbonads {
+  background: var(--neutral-gray-3);
+  padding: 15px;
+  border-radius: var(--rounded-md);
 }
 
 .carbon_ad_wrapper img {

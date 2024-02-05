@@ -24,7 +24,7 @@
 
       <li class="header_nav_menu_item header_nav_menu_theme_switcher">
         <label for="theme_switcher"> Theme </label>
-        <select @change="(e) => e.target.value === 'dark' ? $store.darkMode.enable() : $store.darkMode.disable()">
+        <select @change="(e) => e.target.value === 'dark' ? $store.darkMode.enable() : $store.darkMode.disable()" id="theme_switcher">
           <option value="dark" :selected="$store.darkMode.enabled"> Dark </option>
           <option value="light" :selected="!$store.darkMode.enabled"> Light </option>
         </select>
