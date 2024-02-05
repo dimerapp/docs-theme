@@ -12,6 +12,17 @@
       @if(sponsors && sponsors.length)
         @!component('docs::elements/sponsor_advertisements', { sponsors })
       @end
+
+      @if(carbonAds)
+        <div class="carbon_ad_wrapper">
+          <script
+            async
+            type="text/javascript"
+            src="{{ carbonAds.url }}"
+            id="_carbonads_js"
+          ></script>
+        </div>
+      @end
     </div>
   </div>
 </div>

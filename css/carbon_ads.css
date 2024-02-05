@@ -1,0 +1,25 @@
+.carbon_ad_wrapper {
+  margin-top: var(--prose-elements-margin);
+  background: var(--neutral-gray-3);
+  padding: 15px;
+  border-radius: var(--rounded-md);
+  text-align: center;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--neutral-gray-11);
+}
+
+.carbon_ad_wrapper img {
+  margin: 0 auto 12px;
+  border-radius: var(--rounded-sm);
+}
+
+.carbon_ad_wrapper #carbonads .carbon-poweredby {
+  display: block;
+  margin-top: 6px;
+  text-transform: uppercase;
+  color: var(--neutral-gray-10);
+  text-align: center;
+  font-size: 10px;
+}
