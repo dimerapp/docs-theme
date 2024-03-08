@@ -1,5 +1,6 @@
 :root {
-  --font-sans: 'Instrument Sans', -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  --font-sans: 'Instrument Sans', -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
+    helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
   --font-display: var(--font-sans);
   --font-mono: 'Fira code', Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
 
@@ -48,6 +49,10 @@
   --past-sponsor-container-height: 48px;
   --past-sponsor-margin-bottom: 6px;
   --past-sponsor-margin-right: 6px;
+
+  --featured-sponsor-container-width: 100%;
+  --featured-sponsor-margin-bottom: 12px;
+  --featured-sponsor-margin-right: 0;
 
   --prose-font-size: 15px;
   --prose-line-height: 25px;
@@ -157,6 +162,15 @@
     --prose-h4-font-size: 17px;
     --prose-h4-line-height: 20px;
     --sidebar-width: 250px;
+
+    --featured-sponsor-margin-right: 12px;
+    --featured-sponsor-container-width: calc(50% - var(--featured-sponsor-margin-right));
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --featured-sponsor-container-width: calc(33% - var(--featured-sponsor-margin-right));
   }
 }
 

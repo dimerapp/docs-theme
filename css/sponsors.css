@@ -54,3 +54,21 @@
   align-items: center;
   padding: 24px 0;
 }
+
+.sponsors_list .sponsor_item.featured_sponsor,
+.sponsors_list .sponsor_item.featured_sponsor_empty_box {
+  width: var(--featured-sponsor-container-width);
+  margin-bottom: var(--featured-sponsor-margin-bottom);
+  margin-right: var(--featured-sponsor-margin-right);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sponsors_list .sponsor_item.featured_sponsor_empty_box {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--neutral-gray-10);
+}
