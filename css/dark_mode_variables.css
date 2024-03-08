@@ -3,61 +3,61 @@ html.dark {
    * Neutral grays are used for surface
    * and text
    */
-   --neutral-gray-1: var(--mauve-1);
-   --neutral-gray-2: var(--mauve-2);
-   --neutral-gray-3: var(--mauve-3);
-   --neutral-gray-4: var(--mauve-4);
-   --neutral-gray-5: var(--mauve-5);
-   --neutral-gray-6: var(--mauve-6);
-   --neutral-gray-7: var(--mauve-7);
-   --neutral-gray-8: var(--mauve-8);
-   --neutral-gray-9: var(--mauve-9);
-   --neutral-gray-10: var(--mauve-10);
-   --neutral-gray-11: var(--mauve-11);
-   --neutral-gray-12: var(--mauve-12);
+  --neutral-gray-1: var(--mauve-1);
+  --neutral-gray-2: var(--mauve-2);
+  --neutral-gray-3: var(--mauve-3);
+  --neutral-gray-4: var(--mauve-4);
+  --neutral-gray-5: var(--mauve-5);
+  --neutral-gray-6: var(--mauve-6);
+  --neutral-gray-7: var(--mauve-7);
+  --neutral-gray-8: var(--mauve-8);
+  --neutral-gray-9: var(--mauve-9);
+  --neutral-gray-10: var(--mauve-10);
+  --neutral-gray-11: var(--mauve-11);
+  --neutral-gray-12: var(--mauve-12);
 
-   --neutral-gray-a1: var(--mauve-a1);
-   --neutral-gray-a2: var(--mauve-a2);
-   --neutral-gray-a3: var(--mauve-a3);
-   --neutral-gray-a4: var(--mauve-a4);
-   --neutral-gray-a5: var(--mauve-a5);
-   --neutral-gray-a6: var(--mauve-a6);
-   --neutral-gray-a7: var(--mauve-a7);
-   --neutral-gray-a8: var(--mauve-a8);
-   --neutral-gray-a9: var(--mauve-a9);
-   --neutral-gray-a10: var(--mauve-a10);
-   --neutral-gray-a11: var(--mauve-a11);
-   --neutral-gray-a12: var(--mauve-a12);
+  --neutral-gray-a1: var(--mauve-a1);
+  --neutral-gray-a2: var(--mauve-a2);
+  --neutral-gray-a3: var(--mauve-a3);
+  --neutral-gray-a4: var(--mauve-a4);
+  --neutral-gray-a5: var(--mauve-a5);
+  --neutral-gray-a6: var(--mauve-a6);
+  --neutral-gray-a7: var(--mauve-a7);
+  --neutral-gray-a8: var(--mauve-a8);
+  --neutral-gray-a9: var(--mauve-a9);
+  --neutral-gray-a10: var(--mauve-a10);
+  --neutral-gray-a11: var(--mauve-a11);
+  --neutral-gray-a12: var(--mauve-a12);
 
-   /**
+  /**
     * Accent color is the primary tint to use
     * for colorful elements
     */
-   --accent-1: var(--violet-1);
-   --accent-2: var(--violet-2);
-   --accent-3: var(--violet-3);
-   --accent-4: var(--violet-4);
-   --accent-5: var(--violet-5);
-   --accent-6: var(--violet-6);
-   --accent-7: var(--violet-7);
-   --accent-8: var(--violet-8);
-   --accent-9: var(--violet-9);
-   --accent-10: var(--violet-10);
-   --accent-11: var(--violet-11);
-   --accent-12: var(--violet-12);
+  --accent-1: var(--violet-1);
+  --accent-2: var(--violet-2);
+  --accent-3: var(--violet-3);
+  --accent-4: var(--violet-4);
+  --accent-5: var(--violet-5);
+  --accent-6: var(--violet-6);
+  --accent-7: var(--violet-7);
+  --accent-8: var(--violet-8);
+  --accent-9: var(--violet-9);
+  --accent-10: var(--violet-10);
+  --accent-11: var(--violet-11);
+  --accent-12: var(--violet-12);
 
-   --accent-a1: var(--violet-a1);
-   --accent-a2: var(--violet-a2);
-   --accent-a3: var(--violet-a3);
-   --accent-a4: var(--violet-a4);
-   --accent-a5: var(--violet-a5);
-   --accent-a6: var(--violet-a6);
-   --accent-a7: var(--violet-a7);
-   --accent-a8: var(--violet-a8);
-   --accent-a9: var(--violet-a9);
-   --accent-a10: var(--violet-a10);
-   --accent-a11: var(--violet-a11);
-   --accent-a12: var(--violet-a12);
+  --accent-a1: var(--violet-a1);
+  --accent-a2: var(--violet-a2);
+  --accent-a3: var(--violet-a3);
+  --accent-a4: var(--violet-a4);
+  --accent-a5: var(--violet-a5);
+  --accent-a6: var(--violet-a6);
+  --accent-a7: var(--violet-a7);
+  --accent-a8: var(--violet-a8);
+  --accent-a9: var(--violet-a9);
+  --accent-a10: var(--violet-a10);
+  --accent-a11: var(--violet-a11);
+  --accent-a12: var(--violet-a12);
 
   --progress-bar-color: var(--accent-a11);
   --surface-bg-color: var(--neutral-gray-1);
@@ -78,7 +78,7 @@ html.dark {
   --pre-background-color: var(--neutral-gray-3);
   --code-text-color: var(--accent-a11);
   --code-bg-color: var(--accent-a3);
-  --sidebar-overlay-bg-color: rgba(0, 0, 0, .6);
+  --sidebar-overlay-bg-color: rgba(0, 0, 0, 0.6);
   --sidebar-link-text-color: var(--neutral-gray-11);
   --sidebar-hover-link-bg-color: var(--neutral-gray-a5);
   --sidebar-hover-link-text-color: var(--neutral-gray-12);
@@ -98,24 +98,24 @@ html.dark {
   --copy-code-border-color: hsl(260deg 1.68% 21.01%);
   --note-icon-color: var(--accent-a10);
   --warning-icon-color: var(--orange-a11);
-  --tip-icon-color: hsl(151, 55.0%, 41.5%);
-  --success-tick-color: hsl(151, 55.0%, 41.5%);
+  --tip-icon-color: hsl(151, 55%, 41.5%);
+  --success-tick-color: hsl(151, 55%, 41.5%);
   --code-comment-color: var(--neutral-gray-11);
   --code-comment-green-tint: #648777;
   --code-highlight-bg-color: hsl(0deg 0% 0% / 20%);
   --code-highlight-border-color: var(--accent-a8);
   --code-insert-bg-color: hsla(158, 98.6%, 59.7%, 0.105);
   --code-insert-border-color: hsla(152, 99.9%, 66.5%, 0.661);
-  --code-delete-bg-color: hsla(359, 99.1%, 61.1%, 0.130);
+  --code-delete-bg-color: hsla(359, 99.1%, 61.1%, 0.13);
   --code-delete-border-color: hsla(358, 100%, 67.5%, 0.942);
   --sidebar-backdrop-color: hsl(0deg 0% 0% / 80%);
   --errors-bg-color: hsl(356, 43.4%, 16.4%);
   --errors-border-color: hsl(356, 51.1%, 21.9%);
-  --errors-text-color: hsl(351, 89.0%, 96.0%);
-  --caption-error-border-color: hsl(358, 85.3%, 64.0%);
-  --caption-error-bg-color: hsl(358, 85.3%, 64.0%);
-  --caption-success-border-color: hsl(151, 55.0%, 41.5%);
-  --caption-success-bg-color: hsl(151, 55.0%, 41.5%);
+  --errors-text-color: hsl(351, 89%, 96%);
+  --caption-error-border-color: hsl(358, 85.3%, 64%);
+  --caption-error-bg-color: hsl(358, 85.3%, 64%);
+  --caption-success-border-color: hsl(151, 55%, 41.5%);
+  --caption-success-bg-color: hsl(151, 55%, 41.5%);
   --caption-info-border-color: var(--iris-a11);
   --caption-info-bg-color: var(--iris-a10);
 
@@ -133,10 +133,6 @@ html.dark {
   --prose-blockquote-bg-color: var(--neutral-gray-3);
   --prose-alert-bg-color: var(--neutral-gray-3);
   --prose-alert-border-color: var(--neutral-gray-5);
-
-  --aside-sponsor-bg-color: var(--neutral-gray-3);
-  --aside-sponsor-text-color: var(--neutral-gray-11);
-  --aside-sponsor-hover-text-color: var(--neutral-gray-12);
 
   --footer-text-color: var(--neutral-gray-11);
   --footer-hover-text-color: var(--neutral-gray-12);

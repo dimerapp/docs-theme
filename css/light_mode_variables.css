@@ -79,7 +79,7 @@
   --code-text-color: var(--accent-a11);
   --code-bg-color: var(--accent-a3);
   --sidebar-link-text-color: var(--base-text-color);
-  --sidebar-overlay-bg-color: rgba(0, 0, 0, .6);
+  --sidebar-overlay-bg-color: rgba(0, 0, 0, 0.6);
   --sidebar-hover-link-bg-color: var(--neutral-gray-a5);
   --sidebar-hover-link-text-color: var(--base-text-color);
   --sidebar-active-link-bg-color: var(--accent-a5);
@@ -99,23 +99,23 @@
   --note-icon-color: var(--accent-a10);
   --warning-icon-color: var(--orange-a11);
   --tip-icon-color: hsl(152, 57.5%, 37.6%);
-  --success-tick-color: hsl(151, 55.0%, 41.5%);
+  --success-tick-color: hsl(151, 55%, 41.5%);
   --code-comment-color: var(--neutral-gray-9);
   --code-comment-green-tint: #648777;
   --code-highlight-bg-color: hsl(261.43deg 13.54% 21.91% / 61%);
   --code-highlight-border-color: var(--accent-9);
   --code-insert-bg-color: hsla(158, 98.6%, 59.7%, 0.105);
   --code-insert-border-color: hsla(152, 99.9%, 66.5%, 0.661);
-  --code-delete-bg-color: hsla(359, 99.1%, 61.1%, 0.130);
+  --code-delete-bg-color: hsla(359, 99.1%, 61.1%, 0.13);
   --code-delete-border-color: hsla(358, 100%, 67.5%, 0.942);
   --sidebar-backdrop-color: hsl(0deg 0% 0% / 20%);
   --errors-bg-color: hsl(360, 97.9%, 94.8%);
   --errors-border-color: hsl(360, 81.7%, 87.8%);
-  --errors-text-color: hsl(358, 65.0%, 48.7%);
-  --caption-error-border-color: hsl(358, 75.0%, 59.0%);
-  --caption-error-bg-color: hsl(358, 75.0%, 59.0%);
-  --caption-success-border-color: hsl(151, 55.0%, 41.5%);
-  --caption-success-bg-color: hsl(151, 55.0%, 41.5%);
+  --errors-text-color: hsl(358, 65%, 48.7%);
+  --caption-error-border-color: hsl(358, 75%, 59%);
+  --caption-error-bg-color: hsl(358, 75%, 59%);
+  --caption-success-border-color: hsl(151, 55%, 41.5%);
+  --caption-success-bg-color: hsl(151, 55%, 41.5%);
   --caption-info-border-color: var(--iris-a11);
   --caption-info-bg-color: var(--iris-a10);
 
@@ -133,10 +133,6 @@
   --prose-blockquote-bg-color: var(--neutral-gray-a3);
   --prose-alert-bg-color: var(--neutral-gray-a3);
   --prose-alert-border-color: var(--neutral-gray-a4);
-
-  --aside-sponsor-bg-color: var(--neutral-gray-4);
-  --aside-sponsor-text-color: var(--neutral-gray-11);
-  --aside-sponsor-hover-text-color: var(--neutral-gray-12);
 
   --footer-text-color: var(--neutral-gray-11);
   --footer-hover-text-color: var(--neutral-gray-12);
