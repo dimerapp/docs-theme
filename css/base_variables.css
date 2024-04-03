@@ -4,11 +4,13 @@
   --font-display: var(--font-sans);
   --font-mono: 'Fira code', Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
 
-  --header-z-index: 10;
-  --sidebar-z-index: 12;
-  --sidebar-overlay-z-index: 11;
-  --popup-z-index: 12;
-  --popup-overlay-z-index: 11;
+  --header-z-index: 12;
+
+  --sidebar-overlay-z-index: 10;
+  --sidebar-z-index: 11;
+
+  --popup-overlay-z-index: 10;
+  --popup-z-index: 11;
 
   --base-line-height: 1;
   --logo-width: 35px;
@@ -23,7 +25,7 @@
   --sidebar-width: 70vw;
   --aside-width: 48px;
   --surface-spacing: 24px;
-  --logo-container-width: 35px;
+  --header-main-container-width: 35px;
 
   --content-width: 780px;
   --markdown-width: 670px;
@@ -148,7 +150,7 @@
 
 @media (min-width: 768px) {
   :root {
-    --logo-container-width: 250px;
+    --header-main-container-width: 250px;
     --aside-width: 250px;
     --prose-font-size: 17px;
     --prose-line-height: 27px;

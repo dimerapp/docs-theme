@@ -71,25 +71,25 @@ html.dark .dark_mode_hidden {
   padding: 0 var(--surface-spacing);
 }
 
-.logo_container {
-  width: var(--logo-container-width);
+.header_main_container {
+  min-width: var(--header-main-container-width);
 }
 
-.logo_container a {
+.logo a {
   color: var(--base-text-color);
 }
 
-.logo_container a,
-.logo_container svg {
+.logo a,
+.logo svg {
   display: block;
 }
 
-.logo_container svg {
+.logo svg {
   transition: transform 0.2s ease;
   width: var(--mobile-logo-width);
 }
 
-.logo_container svg:hover {
+.logo svg:hover {
   transform: scale(1.05);
 }
 
@@ -317,6 +317,7 @@ html.light .theme_switcher_light_mode {
   visibility: hidden;
   transform: translateX(-110vw);
   transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  margin-top: var(--header-height);
 }
 
 .docs_sidebar.visible {
@@ -553,12 +554,11 @@ html.light .theme_switcher_light_mode {
     display: flex !important;
   }
 
-  .logo_container svg {
+  .logo svg {
     width: var(--logo-width);
   }
 
   .docs_sidebar {
-    margin-top: var(--header-height);
     pointer-events: inherit;
     visibility: visible;
     transform: none;
