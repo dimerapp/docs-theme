@@ -73,6 +73,9 @@ html.dark .dark_mode_hidden {
 
 .header_main_container {
   min-width: var(--header-main-container-width);
+  display: flex;
+  column-gap: 15px;
+  align-items: center;
 }
 
 .logo a {
@@ -91,6 +94,58 @@ html.dark .dark_mode_hidden {
 
 .logo svg:hover {
   transform: scale(1.05);
+}
+
+.breadcrumb_separator {
+  font-size: 32px;
+  color: var(--neutral-gray-6);
+}
+
+.projects_switcher {
+  position: relative;
+}
+
+.projects_switcher_trigger {
+  box-shadow: var(--button-shadow);
+  background: var(--neutral-gray-2);
+  padding: 8px 15px 8px 15px;
+  border-radius: 6px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  cursor: pointer;
+}
+.projects_switcher_trigger:hover {
+  background: var(--neutral-gray-3);
+}
+
+.projects_switcher_dropdown {
+  position: absolute;
+  box-shadow: var(--dropdown-shadow);
+  background: var(--dropdown-bg);
+  border: 1px solid var(--dropdown-border-color);
+  min-width: 220px;
+  border-radius: 6px;
+  padding: 15px 0;
+  margin-top: 3px;
+}
+
+.projects_switcher_item {
+  display: block;
+  font-weight: 500;
+  padding-top: var(--sidebar-anchor-padding-top);
+  padding-bottom: var(--sidebar-anchor-padding-bottom);
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.projects_switcher_item:hover {
+  background: var(--sidebar-hover-link-bg-color);
+  color: var(--sidebar-hover-link-text-color);
+}
+.projects_switcher_item.up-current {
+  background: var(--sidebar-active-link-bg-color);
+  color: var(--sidebar-active-link-text-color);
 }
 
 .header_aside_container {

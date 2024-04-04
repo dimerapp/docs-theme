@@ -141,4 +141,10 @@ html.dark {
   --prose-dl-border-color: var(--neutral-gray-4);
   --prose-hr-border-color: var(--neutral-gray-4);
   --prose-section-border-color: var(--neutral-gray-4);
+
+  --button-shadow: inset 0 0 0 1px hsla(0, 0%, 100%, 0.1), inset 0 -1px 0 1px rgba(0, 0, 0, 0.25),
+    inset 0 1px 0 hsla(0, 0%, 100%, 0.05);
+  --dropdown-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.25), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  --dropdown-bg: var(--neutral-gray-3);
+  --dropdown-border-color: var(--neutral-gray-5);
 }

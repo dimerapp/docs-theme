@@ -8,4 +8,52 @@
       {{{ await $slots.logoMobile() }}}
     </span>
   </a>
+
+  @if(collections && collections.length > 1 && collection)
+    <div class="breadcrumb_separator">/</div>
+
+    <div layout-projects-listing x-data="dropdown" @click.outside="hide">
+      <div class="projects_switcher">
+        <button class="projects_switcher_trigger" @click.prevent="toggle">
+          <span>
+            {{ collection.name }}
+          </span>
+
+          <svg
+            display="block"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="1.5"
+            viewBox="0 0 16 16"
+            height="1em"
+            width="1em"
+            x-bind:transform="opened ? 'rotate(180)' : ''"
+          >
+            <polyline points="4,6 8,10 12,6"></polyline>
+          </svg>
+        </button>
+
+        <template x-if="opened">
+          <div class="projects_switcher_dropdown">
+            <ul up-nav>
+              @each(one in collections)
+                <li>
+                  <a
+                    href="{{ one.url }}"
+                    up-alias="{{ one.prefix }}/*"
+                    up-target="[layout-shell], [layout-projects-listing]"
+                    class="projects_switcher_item"
+                  >
+                    {{ one.name }}
+                  </a>
+                </li>
+              @end
+            </ul>
+          </div>
+        </template>
+      </div>
+    </div>
+  @end
 </div>
