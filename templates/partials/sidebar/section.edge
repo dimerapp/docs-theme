@@ -1,4 +1,4 @@
-@let(isRoot = section.title.toLowerCase() !== 'root')
+@let(isRoot = section.title.toLowerCase() === 'root')
 @if(collapsible && !isRoot)
   <li
     class="sidebar_section{{ section.isActive ? ' expanded' : '' }}"
