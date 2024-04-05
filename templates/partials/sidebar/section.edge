@@ -1,4 +1,5 @@
-@if(collapsible)
+@let(isRoot = section.title.toLowerCase() !== 'root')
+@if(collapsible && !isRoot)
   <li
     class="sidebar_section{{ section.isActive ? ' expanded' : '' }}"
     x-data="{ expanded: {{ !!section.isActive }} }"
@@ -12,9 +13,11 @@
   </li>
 @else
   <li class="sidebar_section expanded">
-    <button class="sidebar_section_title">
-      <span>{{ section.title }}</span>
-    </button>
+    @if(!isRoot)
+      <button class="sidebar_section_title">
+        <span>{{ section.title }}</span>
+      </button>
+    @end
     @include('docs::partials/sidebar/section_items')
   </li>
 @end
