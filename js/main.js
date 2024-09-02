@@ -152,7 +152,7 @@ export function initBaseComponents(Alpine) {
             .slice()
             .reverse()
             .find((link) => {
-              const el = document.querySelector(link.hash)
+              const el = document.querySelector(encodeURIComponent(link.hash))
               return el.getBoundingClientRect().top <= 100
             }) ?? links[0]
 
